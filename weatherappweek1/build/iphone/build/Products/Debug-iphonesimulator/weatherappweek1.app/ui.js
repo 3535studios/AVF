@@ -8,7 +8,7 @@ var buildUI = function(apiInfo) {
 	});
 	
 	var tempLabel = Ti.UI.createLabel({
-		text: apiInfo.temp + "\u00B0",
+		text: apiInfo.temp + "\u00B0" + " F",
 		backgroundColor: "#96d9ad",
 		color: "#fff",
 		height: 200,
@@ -34,7 +34,7 @@ var buildUI = function(apiInfo) {
 	
 	var weatherLabel = Ti.UI.createLabel({
 		text: apiInfo.weather,
-		backgroundColor: "#f2b441",
+		backgroundColor: "#f26b5e",
 		color: "#fff",
 		height: 100,
 		width: "100%",
@@ -44,15 +44,9 @@ var buildUI = function(apiInfo) {
 		}
 	});
 	
-	var weatherIconLabel = Ti.UI.createLabel({
-		backgroundColor: "#f26b5e",
-		height: 100,
-		width: "100%",
-		textAlign: "center"
-	});
-	
 	var weatherView = Ti.UI.createImageView({
-		image: "http://icons.wxug.com/i/c/k/nt_cloudy.gif"
+		image: apiInfo.weather_icon,
+		right: 200
 	});
 	
 	var humidityLabel = Ti.UI.createLabel({
@@ -80,7 +74,7 @@ var buildUI = function(apiInfo) {
 	});
 	
 	var feelslike_fLabel = Ti.UI.createLabel({
-		text: "Feels Like:" + apiInfo.feelslike +"\u00B0",
+		text: "Feels Like: " + apiInfo.feelslike +"\u00B0" + " F",
 		backgroundColor: "#74bfd4",
 		color: "#fff",
 		height: 100,
@@ -94,8 +88,7 @@ var buildUI = function(apiInfo) {
 	win.add(tempLabel);
 	win.add(cityLabel);
 	win.add(weatherLabel);
-	win.add(weatherIconLabel);
-	weatherIconLabel.add(weatherView);
+	weatherLabel.add(weatherView);
 	win.add(humidityLabel);
 	win.add(windLabel);
 	win.add(feelslike_fLabel);

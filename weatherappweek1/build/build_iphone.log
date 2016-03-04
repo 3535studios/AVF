@@ -1,5 +1,5 @@
 
-3/4/2016, 12:47:53 AM
+3/4/2016, 1:17:04 AM
 
 Operating System
   Name                        = Mac OS X
@@ -21,13 +21,13 @@ Titanium SDK
   Target Platform             = iphone
 
 Command
-  /usr/local/bin/node /Users/sequestermckinney/.appcelerator/install/5.2.0/package/node_modules/titanium/lib/titanium.js build run --platform ios --log-level trace --sdk 5.2.0.GA --project-dir /Users/sequestermckinney/Desktop/Class-Repos/AVF/weatherappweek1 --target simulator --ios-version 9.2 --device-family universal --deploy-type development --sim-type ipad --sim-version 9.0 --device-id B9A2FABA-EC2E-4162-BCFF-F4E528347DD5 --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 49765 --username quest@3535studios.com --password pgedEccl5#195379 --config-file /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/build-1457070472065.json --no-banner --project-dir /Users/sequestermckinney/Desktop/Class-Repos/AVF/weatherappweek1
+  /usr/local/bin/node /Users/sequestermckinney/.appcelerator/install/5.2.0/package/node_modules/titanium/lib/titanium.js build run --platform ios --log-level trace --sdk 5.2.0.GA --project-dir /Users/sequestermckinney/Desktop/Class-Repos/AVF/weatherappweek1 --target simulator --ios-version 9.2 --device-family universal --deploy-type development --sim-type ipad --sim-version 9.2 --device-id 7F589B76-BE68-4A0C-B189-7AAA90ACF4E0 --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 58900 --config-file /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/build-1457072222876.json --no-banner --project-dir /Users/sequestermckinney/Desktop/Class-Repos/AVF/weatherappweek1
 
-[TRACE]  [ioslib] Validating iOS Simulator UDID B9A2FABA-EC2E-4162-BCFF-F4E528347DD5
-[TRACE]  [ioslib] Found iOS Simulator UDID B9A2FABA-EC2E-4162-BCFF-F4E528347DD5
+[TRACE]  [ioslib] Validating iOS Simulator UDID 7F589B76-BE68-4A0C-B189-7AAA90ACF4E0
+[TRACE]  [ioslib] Found iOS Simulator UDID 7F589B76-BE68-4A0C-B189-7AAA90ACF4E0
 [TRACE]  [ioslib] Selected iOS Simulator: iPad 2
-[TRACE]  [ioslib]   UDID    = B9A2FABA-EC2E-4162-BCFF-F4E528347DD5
-[TRACE]  [ioslib]   iOS     = 9.0
+[TRACE]  [ioslib]   UDID    = 7F589B76-BE68-4A0C-B189-7AAA90ACF4E0
+[TRACE]  [ioslib]   iOS     = 9.2
 [TRACE]  [ioslib] Autoselected Xcode: 7.2.1
 [DEBUG]  Detecting modules in /Users/sequestermckinney/Library/Application Support/Titanium/modules
 [DEBUG]  Detected android module: com.appcelerator.apm 1.1.1 @ /Users/sequestermckinney/Library/Application Support/Titanium/modules/android/com.appcelerator.apm/1.1.1
@@ -79,9 +79,9 @@ Command
 [INFO]   Building for target: simulator
 [INFO]   Building using iOS SDK: 9.2
 [INFO]   Building for iOS Simulator: iPad 2
-[DEBUG]  UDID: B9A2FABA-EC2E-4162-BCFF-F4E528347DD5
+[DEBUG]  UDID: 7F589B76-BE68-4A0C-B189-7AAA90ACF4E0
 [DEBUG]  Simulator type: ipad
-[DEBUG]  Simulator version: 9.0
+[DEBUG]  Simulator version: 9.2
 [INFO]   Building for device family: universal
 [DEBUG]  Setting Xcode target to Debug
 [DEBUG]  Setting Xcode build OS to iphonesimulator
@@ -94,7 +94,7 @@ Command
 [INFO]   Initializing the build directory
 [TRACE]  offline build file /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/build-cf9a2856c058706a9d1e5dc7e110c9d47fc669f3.json
 [TRACE]  online 1
-[TRACE]  optimizing build, last build was 7721.109 sec ago
+[TRACE]  optimizing build, last build was 9471.704 sec ago
 [INFO]   Creating Xcode project
 [TRACE]  Removing pre-compile phase
 [TRACE]  No native module libraries to add
@@ -200,23 +200,20 @@ Command
 [INFO]   Removing files
 [DEBUG]  Removing empty directories
 [INFO]   Skipping xcodebuild
-[INFO]   Finished building the application in 1s 70ms
+[INFO]   Finished building the application in 1s 34ms
 [INFO]   Launching iOS Simulator
 [TRACE]  [ioslib] Selected iOS Simulator: iPad 2
-[TRACE]  [ioslib]   UDID    = B9A2FABA-EC2E-4162-BCFF-F4E528347DD5
-[TRACE]  [ioslib]   iOS     = 9.0
+[TRACE]  [ioslib]   UDID    = 7F589B76-BE68-4A0C-B189-7AAA90ACF4E0
+[TRACE]  [ioslib]   iOS     = 9.2
 [TRACE]  [ioslib] Autoselected Xcode: 7.2.1
-[TRACE]  [ioslib] Removing old log file: /Users/sequestermckinney/Library/Developer/CoreSimulator/Devices/B9A2FABA-EC2E-4162-BCFF-F4E528347DD5/data/Containers/Data/Application/627B8459-4ACF-4643-8059-EB2EDD910F53/Documents/efbc41fc-e81d-47b1-9111-c806b213faa0.log
+[TRACE]  [ioslib] Removing old log file: /Users/sequestermckinney/Library/Developer/CoreSimulator/Devices/7F589B76-BE68-4A0C-B189-7AAA90ACF4E0/data/Containers/Data/Application/A1E59912-6798-4604-9623-4BC55740282A/Documents/efbc41fc-e81d-47b1-9111-c806b213faa0.log
 [TRACE]  [ioslib] iPad 2 Simulator already running with the correct udid
-[TRACE]  [ioslib] Tailing iPad 2 Simulator system log: /Users/sequestermckinney/Library/Logs/CoreSimulator/B9A2FABA-EC2E-4162-BCFF-F4E528347DD5/system.log
+[TRACE]  [ioslib] Tailing iPad 2 Simulator system log: /Users/sequestermckinney/Library/Logs/CoreSimulator/7F589B76-BE68-4A0C-B189-7AAA90ACF4E0/system.log
 [TRACE]  [ioslib] Running: osascript "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/node_modules/ioslib/lib/sim_focus.scpt" "Simulator"
 [TRACE]  [ioslib] iPad 2 Simulator successfully focused
-[TRACE]  [ioslib] Running: /Applications/Xcode.app/Contents/Developer/usr/bin/simctl install B9A2FABA-EC2E-4162-BCFF-F4E528347DD5 /Users/sequestermckinney/Desktop/Class-Repos/AVF/weatherappweek1/build/iphone/build/Products/Debug-iphonesimulator/weatherappweek1.app
+[TRACE]  [ioslib] Running: /Applications/Xcode.app/Contents/Developer/usr/bin/simctl install 7F589B76-BE68-4A0C-B189-7AAA90ACF4E0 /Users/sequestermckinney/Desktop/Class-Repos/AVF/weatherappweek1/build/iphone/build/Products/Debug-iphonesimulator/weatherappweek1.app
 [TRACE]  [ioslib] App installed
-[TRACE]  [ioslib] Running: /Applications/Xcode.app/Contents/Developer/usr/bin/simctl launch B9A2FABA-EC2E-4162-BCFF-F4E528347DD5 com.studios.weatherappweek1
+[TRACE]  [ioslib] Running: /Applications/Xcode.app/Contents/Developer/usr/bin/simctl launch 7F589B76-BE68-4A0C-B189-7AAA90ACF4E0 com.studios.weatherappweek1
 [TRACE]  [ioslib] App launched
-[TRACE]  [ioslib] Found application log file: /Users/sequestermckinney/Library/Developer/CoreSimulator/Devices/B9A2FABA-EC2E-4162-BCFF-F4E528347DD5/data/Containers/Data/Application/53A7F001-12B4-41DE-B774-36A1F2319EDF/Documents/efbc41fc-e81d-47b1-9111-c806b213faa0.log
-[TRACE]  [weatherappweek1] assertion failed: 15D21 13A344: libxpc.dylib + 71578 [5150F854-0B13-3C60-8B86-891EC976986E]: 0x7d
-[TRACE]  [weatherappweek1] <CATransformLayer: 0x7b72e0d0> - changing property masksToBounds in transform-only layer, will have no effect
-[TRACE]  [weatherappweek1] <CATransformLayer: 0x7ca26700> - changing property masksToBounds in transform-only layer, will have no effect
-[TRACE]  [weatherappweek1] <CATransformLayer: 0x7b6173b0> - changing property masksToBounds in transform-only layer, will have no effect
+[TRACE]  [ioslib] Found application log file: /Users/sequestermckinney/Library/Developer/CoreSimulator/Devices/7F589B76-BE68-4A0C-B189-7AAA90ACF4E0/data/Containers/Data/Application/831FE504-22C2-48C8-8057-5E54177E52C6/Documents/efbc41fc-e81d-47b1-9111-c806b213faa0.log
+[TRACE]  [weatherappweek1] assertion failed: 15D21 13C75: libxpc.dylib + 71630 [60B4AA4E-F817-3C94-B4DA-0620CC9847B6]: 0x7d

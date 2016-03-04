@@ -13,6 +13,7 @@ var client = Ti.Network.createHTTPClient ({
 				temp : json.current_observation.temp_f,
 				city : json.current_observation.display_location.city,
 				weather : json.current_observation.weather,
+				weather_icon: json.current_observation.icon_url,
 				humidity: json.current_observation.relative_humidity,
 				wind: json.current_observation.wind_mph,
 				feelslike: json.current_observation.feelslike_f
