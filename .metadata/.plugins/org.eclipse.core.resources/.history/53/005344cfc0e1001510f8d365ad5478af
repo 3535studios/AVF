@@ -1,0 +1,64 @@
+// build app ui
+
+var buildUI = function(apiInfo) {
+	console.log(buildUI);
+	var win = Ti.UI.createWindow({
+		backgroundColor: "#f2f2f0",
+		layout: "vertical"
+	});
+	
+	var cityLabel = Ti.UI.createLabel({
+		text: "City: " + city,
+		backgroundColor: "#96d9ad",
+		color: "#000",
+		top: 50
+	});
+	
+	var tempLabel = Ti.UI.createLabel({
+		text: "Temp: ",
+		backgroundColor: "#f2c641",
+		color: "#000"
+	});
+	
+	var weatherLabel = Ti.UI.createLabel({
+		text: "Weather: ",
+		backgroundColor: "#f2b441",
+		color: "#000"
+	});
+	
+	var weather_iconLabel = Ti.UI.createLabel({
+		text: "Weather Icon: ",
+		backgroundColor: "#f26b5e",
+		color: "#000"
+	});
+	
+	var humidityLabel = Ti.UI.createLabel({
+		text: "Humidity: ",
+		backgroundColor: "#96d9ad",
+		color: "#000"
+	});
+	
+	var windLabel = Ti.UI.createLabel({
+		text: "Wind MPH: ",
+		backgroundColor: "#f2c641",
+		color: "#000"
+	});
+	
+	var feelslike_fLabel = Ti.UI.createLabel({
+		text: "Feels Like: ",
+		backgroundColor: "#f2b441",
+		color: "#000"
+	});
+	
+	win.add(cityLabel);
+	win.add(tempLabel);
+	win.add(weatherLabel);
+	win.add(weather_iconLabel);
+	win.add(humidityLabel);
+	win.add(windLabel);
+	win.add(feelslike_fLabel);
+	
+	win.open();
+};
+
+exports.buildUI = buildUI;

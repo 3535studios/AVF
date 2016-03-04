@@ -1,0 +1,52 @@
+// build app ui
+
+var buildUI = function() {
+	var win = Ti.UI.createWindow({
+		backgroundColor: "#f2f2f0"
+	});
+	
+	var city = ({
+		text: "City",
+		backgroundColor: "#96d9ad",
+		height: 50
+	});
+	
+	var temp = ({
+		text: "City",
+		backgroundColor: "#f2c641",
+		height: 50
+	});
+	
+	var weather = ({
+		text: "City",
+		backgroundColor: "#f2b441",
+		height: 50
+	});
+	
+	var weather_icon = ({
+		text: "Weather Icon",
+		backgroundColor: "#f26b5e",
+		height: 50
+	});
+	
+	var humidity = ({
+		text: "Humidity",
+		backgroundColor: "#96d9ad",
+		height: 50
+	});
+	
+	var wind = ({
+		text: "Wind MPH",
+		backgroundColor: "#f2c641",
+		height: 50
+	});
+	
+	var feelslike_f = ({
+		text: "Feels Like",
+		backgroundColor: "#f2b441",
+		height: 50
+	});
+	
+};
+
+exports.buildUI = buildUI;

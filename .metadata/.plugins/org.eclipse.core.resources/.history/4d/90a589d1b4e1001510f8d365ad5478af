@@ -1,0 +1,7 @@
+// build app ui
+
+var buildUI = function() {
+	
+};
+
+exports.buildUI = buildUI;

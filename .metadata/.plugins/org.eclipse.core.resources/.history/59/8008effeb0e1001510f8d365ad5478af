@@ -1,0 +1,6 @@
+//get geoData
+
+var getGeo = function()
+{
+	
+};

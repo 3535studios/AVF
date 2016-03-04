@@ -1,0 +1,24 @@
+//get data
+
+var apiData = function() {
+console.log(apiData);
+var url = "";
+console.log(url);
+var client = Ti.Network.createHTTPClient ({
+	
+	onload : function(e) {
+		
+	},
+	
+	onerror : function(e) {
+		alert("The api is not connected.");
+	},
+	timeout: 5000
+});
+
+client.open("GET", url);
+client.send();
+
+};
+
+exports.apiData = apiData;

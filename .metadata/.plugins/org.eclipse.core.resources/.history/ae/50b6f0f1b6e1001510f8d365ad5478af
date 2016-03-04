@@ -1,0 +1,9 @@
+// build app ui
+
+var buildUI = function() {
+	var win = Ti.UI.createWindow({
+		backgroundColor: "#f2f2f0"
+	});
+};
+
+exports.buildUI = buildUI;
