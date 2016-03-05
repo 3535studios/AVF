@@ -1,7 +1,7 @@
 =run
-LAST_LAUNCH_TIMESTAMP=1457071211858
+LAST_LAUNCH_TIMESTAMP=1457184559203
 eclipse.preferences.version=1
 preference.show.console.onError=false
 preference.studio.perspective.version=103
 weatherappweek1\:launchMode=run
-weatherappweek1\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.7F589B76-BE68-4A0C-B189-7AAA90ACF4E0
+weatherappweek1\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.run.device.launchShortcut.6c7ad1bde05c886b0d60d7d29a18004bbb324a1b

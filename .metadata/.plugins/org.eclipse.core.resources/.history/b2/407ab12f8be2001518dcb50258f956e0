@@ -1,0 +1,21 @@
+//get geoData
+
+var getGeo = function() {
+	
+	if (Ti.Geolocation.locationServicesEnabled) {
+		Ti.Geolocation.purpose = 'Get Current Location';
+		Ti.Geolocation.getCurrentPosition(function(e) {
+			if (e.error) {
+				Ti.API.error('Error: ' + e.error);
+			} else {
+				Ti.API.info(e.coords);
+			}
+		});
+	} else {
+		alert('Please enable location services');
+	}
+  
+};
+console.log(getGeo);
+
+exports.getGeo = getGeo;

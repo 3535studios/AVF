@@ -2,19 +2,24 @@
 Ti.UI.setBackgroundColor("#000");
 
 /* app story
- * check for network connectivity
- *  if yes go to api
- *  if no then alert Please check your network connectivity
- * check for api connectivity
- * 	if yes display weather points on ui
- * 	is no display alert Please check your api connection
- * go to ui 
- * display seven data points on ui
+ * // app launch
+ // check network connectivity
+ // if no then alert
+ // if yes call geolocation data
+ // require api module
+ // pass lat, lng to api module
+ // catch lat, lng in api module
+ // require ui module
+ // pass api data points to ui module
+ // catch data points in ui module
+ // display ui
  * */
 
 if (Ti.Network.online === true) {
-	var apiModule = require("api");
-		apiModule.apiData();
+	// imports geoModule and makes global then fires getGeo function
+	var geoModule = require("geo");
+	geoModule.getGeo();
+
 } else {
 	alert("Please check your network connection");
 }

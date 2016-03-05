@@ -1,0 +1,11 @@
+//get geoData
+
+var getGeo = function()
+{
+	
+};
+
+var apiModule = require("api");
+	apiModule.apiData(lat,lng);
+
+exports.getGeo = getGeo;

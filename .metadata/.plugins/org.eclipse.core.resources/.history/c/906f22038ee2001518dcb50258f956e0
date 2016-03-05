@@ -1,0 +1,13 @@
+//get geoData
+
+var getGeo = function() {
+	
+	Ti.Geolocation.purpose = "Your location is needed to gather lat/long coords."; 
+	Ti.Geolocation.getCurrentPosition(function(e){
+                console.log(e);  //good idea to console log to see what's available to you
+		
+        
+	});
+}; 
+
+exports.getGeo = getGeo;

@@ -1,0 +1,15 @@
+//get geoData
+
+var getGeo = function() {
+	
+	Ti.Geolocation.getCurrentPosition(function(p){
+                console.log(p); 
+		var lat = p.coords.latitude;
+		var lng = p.coords.longitude;
+        
+        var apiModule = require("api");
+			apiModule.apiData(lat, lng); 
+	});
+}; 
+
+exports.getGeo = getGeo;
