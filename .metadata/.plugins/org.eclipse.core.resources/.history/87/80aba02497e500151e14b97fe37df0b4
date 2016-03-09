@@ -2,7 +2,6 @@
 
 var apiData = function(){
 	
-	
 };
 
 exports.apiData = apiData;
