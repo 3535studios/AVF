@@ -28,8 +28,8 @@ var apiData = function(lat, lng) {
 				heat_index: json.current_observation.heat_index_f
 			};
 			console.log(apiInfo);
-			var ui = require("ui");
-			ui.buildUI(apiInfo);
+			var dbModule = require("db");
+			dbModule.save(apiInfo);
 		},
 
 		onerror : function(e) {

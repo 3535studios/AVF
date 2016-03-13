@@ -23,7 +23,7 @@ if (Ti.Network.online === true) {
 	var geoModule = require("geo");
 		geoModule.geoData();
 } else {
-	/*var localStorage = require("db");
-	localStorage = dbData();*/
-	alert("Please check your network connection");
+	var localStorage = require("db");
+	localStorage.read();
+	//alert("Please check your network connection");
 }

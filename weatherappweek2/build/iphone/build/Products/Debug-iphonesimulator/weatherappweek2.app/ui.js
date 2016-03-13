@@ -1,6 +1,6 @@
 //builds the ui to display to the user
 
-var buildUI = function(apiInfo) {
+var buildUI = function(dbArray) {
 	console.log(buildUI);
 	var win = Ti.UI.createWindow({
 		backgroundColor : "#f2f2f0",
@@ -10,7 +10,7 @@ var buildUI = function(apiInfo) {
 	if (Ti.Platform.osname === "android") {
 
 		var cityLabel = Ti.UI.createLabel({
-			text : apiInfo.city,
+			text : dbArray[0].dbInfo.city,
 			backgroundColor : "#f2c641",
 			color : "#fff",
 			height : 100,
@@ -23,7 +23,7 @@ var buildUI = function(apiInfo) {
 		});
 	} else {
 		var cityLabel = Ti.UI.createLabel({
-			text : apiInfo.city,
+			text : dbArray[1].dbInfo.city,
 			backgroundColor : "#f2c641",
 			color : "#fff",
 			height : 100,
@@ -37,7 +37,7 @@ var buildUI = function(apiInfo) {
 	}
 
 	var tempLabel = Ti.UI.createLabel({
-		text : apiInfo.temp + "\u00B0",
+		text : dbArray[2].dbInfo.temp + "\u00B0",
 		backgroundColor : "#96d9ad",
 		color : "#fff",
 		height : 200,
@@ -49,7 +49,7 @@ var buildUI = function(apiInfo) {
 	});
 
 	var weatherLabel = Ti.UI.createLabel({
-		text : apiInfo.weather,
+		text : dbArray.dbInfo.weather,
 		backgroundColor : "#f26b5e",
 		color : "#fff",
 		height : 100,
@@ -60,13 +60,8 @@ var buildUI = function(apiInfo) {
 		}
 	});
 
-	var weatherView = Ti.UI.createImageView({
-		image : apiInfo.weather_icon,
-		right : "30%"
-	});
-
 	var humidityLabel = Ti.UI.createLabel({
-		text : "Humidity: " + apiInfo.humidity,
+		text : "Humidity: " + dbArray.humidity,
 		backgroundColor : "#6a777a",
 		color : "#fff",
 		height : 100,
@@ -78,7 +73,7 @@ var buildUI = function(apiInfo) {
 	});
 
 	var windLabel = Ti.UI.createLabel({
-		text : "Wind MPH: " + apiInfo.wind,
+		text : "Wind MPH: " + dbArray.wind,
 		backgroundColor : "#64350d",
 		color : "#fff",
 		height : 100,
@@ -90,7 +85,7 @@ var buildUI = function(apiInfo) {
 	});
 
 	var feelslike_fLabel = Ti.UI.createLabel({
-		text : "Feels Like: " + apiInfo.feelslike + "\u00B0",
+		text : "Feels Like: " + dbArray.feelslike + "\u00B0",
 		backgroundColor : "#74bfd4",
 		color : "#fff",
 		height : 100,
@@ -104,7 +99,6 @@ var buildUI = function(apiInfo) {
 	win.add(cityLabel);
 	win.add(tempLabel);
 	win.add(weatherLabel);
-	weatherLabel.add(weatherView);
 	win.add(humidityLabel);
 	win.add(windLabel);
 	win.add(feelslike_fLabel);
