@@ -3166,9 +3166,9 @@
 			"size": 306760
 		},
 		"Classes/ApplicationRouting.m": {
-			"hash": "bc5b1e0f460a53d42e4a291bc65a32f6",
-			"mtime": "2016-03-05T16:37:58.000Z",
-			"size": 166263
+			"hash": "fb26d965d8eea14f381c9abf3a02d19d",
+			"mtime": "2016-02-20T16:09:30.000Z",
+			"size": 493
 		},
 		"modules/ui/images/badge.png": {
 			"hash": "4c5e51e328d337a135f513bc1e958c82",
@@ -3186,18 +3186,16 @@
 			"size": 3126
 		}
 	},
-	"target": "device",
-	"deployType": "test",
+	"target": "simulator",
+	"deployType": "development",
 	"sdkVersion": "5.2.0.GA",
 	"iosSdkVersion": "9.2",
 	"deviceFamily": "universal",
 	"iosSdkPath": "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/iphone",
 	"tiCoreHash": "5710cda7b179a3c8391cc94011e308de",
-	"developerName": "Sequester McKinney (28G3T772NK)",
 	"modulesHash": "7fb655db1d51a26b74a2778ab4a02a6b",
 	"modulesNativeHash": "d41d8cd98f00b204e9800998ecf8427e",
 	"gitHash": "384775e",
-	"ppUuid": "414742c8-aba2-4b6c-9843-9c93c52fcc5f",
 	"forceCopy": false,
 	"forceCopyAll": false,
 	"name": "weatherappweek1",
@@ -3210,8 +3208,8 @@
 	"copyright": "2016 by sequestermckinney",
 	"guid": "efbc41fc-e81d-47b1-9111-c806b213faa0",
 	"useAppThinning": false,
-	"skipJSMinification": false,
-	"encryptJS": true,
+	"skipJSMinification": true,
+	"encryptJS": false,
 	"useJSCore": false,
 	"runOnMainThread": false,
 	"useAutoLayout": false

@@ -1,9 +1,11 @@
 =run
-LAST_LAUNCH_TIMESTAMP=1457478990223
+LAST_LAUNCH_TIMESTAMP=1457826160876
 eclipse.preferences.version=1
 preference.show.console.onError=false
 preference.studio.perspective.version=103
+walmartappweek3\:launchMode=run
+walmartappweek3\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.B9A2FABA-EC2E-4162-BCFF-F4E528347DD5
 weatherappweek1\:launchMode=run
-weatherappweek1\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.run.device.launchShortcut.6c7ad1bde05c886b0d60d7d29a18004bbb324a1b
+weatherappweek1\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.B9A2FABA-EC2E-4162-BCFF-F4E528347DD5
 weatherappweek2\:launchMode=run
 weatherappweek2\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.B9A2FABA-EC2E-4162-BCFF-F4E528347DD5

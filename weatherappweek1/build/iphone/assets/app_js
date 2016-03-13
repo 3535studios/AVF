@@ -1,1 +1,0 @@
-if(Ti.UI.setBackgroundColor("#000"),Ti.Network.online===!0){var geoModule=require("geo");geoModule.getGeo()}else alert("Please check your network connection");
