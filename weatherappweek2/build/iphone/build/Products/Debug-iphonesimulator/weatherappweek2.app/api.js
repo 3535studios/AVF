@@ -27,9 +27,12 @@ var apiData = function(lat, lng) {
 				rain: json.current_observation.precip_today_in,
 				heat_index: json.current_observation.heat_index_f
 			};
+			
+			var cleanModule = require("db");
+				cleanModule.cleandb(); 
 			console.log(apiInfo);
 			var dbModule = require("db");
-			dbModule.save(apiInfo);
+				dbModule.save(apiInfo);
 		},
 
 		onerror : function(e) {

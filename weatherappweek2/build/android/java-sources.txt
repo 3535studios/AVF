@@ -1,0 +1,8 @@
+"/Users/sequestermckinney/Desktop/Class-Repos/AVF/weatherappweek2/build/android/gen/android/support/v7/appcompat/R.java"
+"/Users/sequestermckinney/Desktop/Class-Repos/AVF/weatherappweek2/build/android/gen/android/support/v7/cardview/R.java"
+"/Users/sequestermckinney/Desktop/Class-Repos/AVF/weatherappweek2/build/android/gen/com/studios/weatherappweek2/AssetCryptImpl.java"
+"/Users/sequestermckinney/Desktop/Class-Repos/AVF/weatherappweek2/build/android/gen/com/studios/weatherappweek2/R.java"
+"/Users/sequestermckinney/Desktop/Class-Repos/AVF/weatherappweek2/build/android/gen/com/studios/weatherappweek2/Weatherappweek2Activity.java"
+"/Users/sequestermckinney/Desktop/Class-Repos/AVF/weatherappweek2/build/android/gen/com/studios/weatherappweek2/Weatherappweek2AppInfo.java"
+"/Users/sequestermckinney/Desktop/Class-Repos/AVF/weatherappweek2/build/android/gen/com/studios/weatherappweek2/Weatherappweek2Application.java"
+"/Users/sequestermckinney/Desktop/Class-Repos/AVF/weatherappweek2/build/android/gen/ti/modules/titanium/ui/R.java"

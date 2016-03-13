@@ -22,6 +22,7 @@ Ti.UI.setBackgroundColor("#000");
 if (Ti.Network.online === true) {
 	var geoModule = require("geo");
 		geoModule.geoData();
+
 } else {
 	var localStorage = require("db");
 	localStorage.read();
