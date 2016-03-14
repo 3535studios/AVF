@@ -69,6 +69,7 @@
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_7M77a97bEeWsKdUh0Al3oQ" elementId="terminalArea" containerData="2481" selectedElement="_7M77bN7bEeWsKdUh0Al3oQ">
                 <tags>newtablook</tags>
+                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_7M77bN7bEeWsKdUh0Al3oQ" elementId="org.eclipse.ui.console.ConsoleView" ref="_7M4RAd7bEeWsKdUh0Al3oQ"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_7M77bd7bEeWsKdUh0Al3oQ" elementId="com.aptana.terminal.views.terminal:*" toBeRendered="false" ref="_7M4RAt7bEeWsKdUh0Al3oQ"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_7M77bt7bEeWsKdUh0Al3oQ" elementId="com.aptana.terminal.views.terminal" toBeRendered="false" ref="_7M6GMN7bEeWsKdUh0Al3oQ"/>
@@ -100,11 +101,10 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_7MwVMN7bEeWsKdUh0Al3oQ" elementId="org.eclipse.ui.editorss" selectedElement="_7MwVMd7bEeWsKdUh0Al3oQ">
-      <children xsi:type="basic:PartStack" xmi:id="_7MwVMd7bEeWsKdUh0Al3oQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_HPmMkOTdEeWhDsUJ4VyYYA">
+      <children xsi:type="basic:PartStack" xmi:id="_7MwVMd7bEeWsKdUh0Al3oQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_K78igOTdEeWhDsUJ4VyYYA">
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_1Jqh8OTcEeWhDsUJ4VyYYA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="tiapp.xml" iconURI="platform:/plugin/com.appcelerator.titanium.ui.ide/icons/tiapp.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.appcelerator.titanium.ui.ide.tiappEditor&quot; name=&quot;tiapp.xml&quot; partName=&quot;tiapp.xml&quot; title=&quot;tiapp.xml&quot; tooltip=&quot;weatherappweek2/tiapp.xml&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/weatherappweek2/tiapp.xml&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
@@ -122,17 +122,15 @@
           <tags>Editor</tags>
           <tags>com.aptana.editor.js</tags>
           <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_I-jowOTdEeWhDsUJ4VyYYA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="db.js" iconURI="platform:/plugin/com.aptana.editor.js/icons/js.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.aptana.editor.js&quot; name=&quot;db.js&quot; partName=&quot;db.js&quot; title=&quot;db.js&quot; tooltip=&quot;weatherappweek2/Resources/db.js&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/weatherappweek2/Resources/db.js&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2833&quot; selectionTopPixel=&quot;392&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.aptana.editor.js&quot; name=&quot;db.js&quot; partName=&quot;db.js&quot; title=&quot;db.js&quot; tooltip=&quot;weatherappweek2/Resources/db.js&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/weatherappweek2/Resources/db.js&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;801&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>com.aptana.editor.js</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_K78igOTdEeWhDsUJ4VyYYA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ui.js" iconURI="platform:/plugin/com.aptana.editor.js/icons/js.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.aptana.editor.js&quot; name=&quot;ui.js&quot; partName=&quot;ui.js&quot; title=&quot;ui.js&quot; tooltip=&quot;weatherappweek2/Resources/ui.js&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/weatherappweek2/Resources/ui.js&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1692&quot; selectionTopPixel=&quot;363&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.aptana.editor.js&quot; name=&quot;ui.js&quot; partName=&quot;ui.js&quot; title=&quot;ui.js&quot; tooltip=&quot;weatherappweek2/Resources/ui.js&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/weatherappweek2/Resources/ui.js&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;768&quot; selectionTopPixel=&quot;210&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>com.aptana.editor.js</tags>
           <tags>removeOnHide</tags>
@@ -181,6 +179,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_pXZ6QOG6EeWhX4Vi9fUhGw" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -218,7 +218,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7KcoEN7bEeWsKdUh0Al3oQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_FpdHIuisEeWM6_b2hjkX2Q" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_5n_W897bEeWsKdUh0Al3oQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_79p9QOnJEeWYpLdH81HXqQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_5n_W897bEeWsKdUh0Al3oQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7KcoEd7bEeWsKdUh0Al3oQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -239,7 +239,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7KdPIN7bEeWsKdUh0Al3oQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_FpimsOisEeWM6_b2hjkX2Q" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_5n7Fc97bEeWsKdUh0Al3oQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_79vc0OnJEeWYpLdH81HXqQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_5n7Fc97bEeWsKdUh0Al3oQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7Kd2MN7bEeWsKdUh0Al3oQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -567,7 +567,7 @@
       <tags>platform:cocoa</tags>
     </bindings>
     <bindings xmi:id="_5o-1VN7bEeWsKdUh0Al3oQ" keySequence="COMMAND+SHIFT+D" command="_5oBMHt7bEeWsKdUh0Al3oQ"/>
-    <bindings xmi:id="_E_gyQeisEeWM6_b2hjkX2Q" keySequence="COMMAND+CTRL+F" command="_5pKbg97bEeWsKdUh0Al3oQ"/>
+    <bindings xmi:id="_7SgHcenJEeWYpLdH81HXqQ" keySequence="COMMAND+CTRL+F" command="_5pKbg97bEeWsKdUh0Al3oQ"/>
   </bindingTables>
   <bindingTables xmi:id="_5olMst7bEeWsKdUh0Al3oQ" elementId="com.aptana.editor.common.outline" bindingContext="_5oGrld7bEeWsKdUh0Al3oQ">
     <bindings xmi:id="_5olMs97bEeWsKdUh0Al3oQ" keySequence="ALT+COMMAND++" command="_5n86tt7bEeWsKdUh0Al3oQ"/>
@@ -742,7 +742,7 @@
     <bindings xmi:id="_5o5VxN7bEeWsKdUh0Al3oQ" keySequence="CTRL+D" command="_5n9ho97bEeWsKdUh0Al3oQ"/>
   </bindingTables>
   <bindingTables xmi:id="_5pLCld7bEeWsKdUh0Al3oQ" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_5nVPit7bEeWsKdUh0Al3oQ">
-    <bindings xmi:id="_E_hZUOisEeWM6_b2hjkX2Q" keySequence="M1+W" command="_5pLCk97bEeWsKdUh0Al3oQ"/>
+    <bindings xmi:id="_7SgugOnJEeWYpLdH81HXqQ" keySequence="M1+W" command="_5pLCk97bEeWsKdUh0Al3oQ"/>
   </bindingTables>
   <bindingTables xmi:id="_7MxjUd7bEeWsKdUh0Al3oQ" bindingContext="_7MxjUN7bEeWsKdUh0Al3oQ"/>
   <bindingTables xmi:id="_7MxjU97bEeWsKdUh0Al3oQ" bindingContext="_7MxjUt7bEeWsKdUh0Al3oQ"/>

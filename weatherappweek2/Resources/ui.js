@@ -37,7 +37,7 @@ var buildUI = function(dbArray) {
 	}
 
 	var tempLabel = Ti.UI.createLabel({
-		text : dbArray[1].temp + "\u00B0",
+		text : dbArray[1].temp_f + "\u00B0",
 		backgroundColor : "#96d9ad",
 		color : "#fff",
 		height : 200,
@@ -106,4 +106,4 @@ var buildUI = function(dbArray) {
 	win.open();
 };
 
-exports.buildUI = buildUI; 
+exports.buildUI = buildUI;

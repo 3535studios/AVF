@@ -4,8 +4,8 @@
 var save = function(apiInfo) {
 	console.log(save);
 	var db = Ti.Database.open('weatherdb');
-	db.execute('CREATE TABLE IF NOT EXISTS weatherTbl (id INTEGER PRIMARY KEY, city TEXT, temp_f TEXT, weather TEXT, relative_humidity TEXT, wind_mph TEXT, feelslike_f TEXT, wind_dir TEXT, wind_gust_mph TEXT, wind_degrees TEXT, visibility_mi TEXT, pressure_in TEXT, dewpoint_f TEXT, windchill_f TEXT, precip_today_in TEXT, heat_index_f TEXT)');
-	db.execute('INSERT INTO weatherTbl (city, temp_f, weather, relative_humidity, wind_mph, feelslike_f, wind_dir, wind_gust_mph, wind_degrees, visibility_mi, pressure_in, dewpoint_f, windchill_f, precip_today_in, heat_index_f) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', apiInfo.city, apiInfo.temp, apiInfo.weather, apiInfo.relative_humidity, apiInfo.wind_mph, apiInfo.feelslike_f, apiInfo.wind_dir, apiInfo.wind_gust_mph, apiInfo.wind_degrees, apiInfo.visibility_mi, apiInfo.pressure_in, apiInfo.dewpoint_f, apiInfo.windchill_f, apiInfo.precip_today_in, apiInfo.heat_index_f);
+	db.execute('CREATE TABLE IF NOT EXISTS weatherTbl (id INTEGER PRIMARY KEY, city TEXT, temp_f INTEGER, weather TEXT, relative_humidity TEXT, wind_mph TEXT, feelslike_f TEXT, wind_dir TEXT, wind_gust_mph TEXT, wind_degrees TEXT, visibility_mi TEXT, pressure_in TEXT, dewpoint_f TEXT, windchill_f TEXT, precip_today_in TEXT, heat_index_f TEXT)');
+	db.execute('INSERT INTO weatherTbl (city, temp_f, weather, relative_humidity, wind_mph, feelslike_f, wind_dir, wind_gust_mph, wind_degrees, visibility_mi, pressure_in, dewpoint_f, windchill_f, precip_today_in, heat_index_f) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', apiInfo.city, apiInfo.temp_f, apiInfo.weather, apiInfo.relative_humidity, apiInfo.wind_mph, apiInfo.feelslike_f, apiInfo.wind_dir, apiInfo.wind_gust_mph, apiInfo.wind_degrees, apiInfo.visibility_mi, apiInfo.pressure_in, apiInfo.dewpoint_f, apiInfo.windchill_f, apiInfo.precip_today_in, apiInfo.heat_index_f);
 	db.close();
 	read();
 };
@@ -16,7 +16,7 @@ exports.save = save;
 var read = function() {
 	console.log(read);
 	var db = Ti.Database.open('weatherdb');
-	db.execute('CREATE TABLE IF NOT EXISTS weatherTbl (id INTEGER PRIMARY KEY, city TEXT, temp_f TEXT, weather TEXT, relative_humidity TEXT, wind_mph TEXT, feelslike_f TEXT, wind_dir TEXT, wind_gust_mph TEXT, wind_degrees TEXT, visibility_mi TEXT, pressure_in TEXT, dewpoint_f TEXT, windchill_f TEXT, precip_today_in TEXT, heat_index_f TEXT)');
+	db.execute('CREATE TABLE IF NOT EXISTS weatherTbl (id INTEGER PRIMARY KEY, city TEXT, temp_f INTEGER, weather TEXT, relative_humidity TEXT, wind_mph TEXT, feelslike_f TEXT, wind_dir TEXT, wind_gust_mph TEXT, wind_degrees TEXT, visibility_mi TEXT, pressure_in TEXT, dewpoint_f TEXT, windchill_f TEXT, precip_today_in TEXT, heat_index_f TEXT)');
 	var dbRows = db.execute('SELECT city, temp_f, weather, relative_humidity, wind_mph, feelslike_f, wind_dir, wind_gust_mph, wind_degrees, visibility_mi, pressure_in, dewpoint_f, windchill_f, precip_today_in, heat_index_f FROM weatherTbl');
 	if (dbRows.rowCount > 0) {
 		var dbArray = [];
