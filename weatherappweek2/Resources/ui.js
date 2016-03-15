@@ -37,7 +37,7 @@ var buildUI = function(dbArray) {
 	}
 
 	var tempLabel = Ti.UI.createLabel({
-		text : dbArray[1].temp_f + "\u00B0",
+		text : dbArray[0].temp + "\u00B0",
 		backgroundColor : "#96d9ad",
 		color : "#fff",
 		height : 200,
@@ -49,7 +49,7 @@ var buildUI = function(dbArray) {
 	});
 
 	var weatherLabel = Ti.UI.createLabel({
-		text : dbArray[2].weather,
+		text : dbArray[0].weather,
 		backgroundColor : "#f26b5e",
 		color : "#fff",
 		height : 100,
@@ -59,49 +59,62 @@ var buildUI = function(dbArray) {
 			fontSize : 64
 		}
 	});
-
-	var humidityLabel = Ti.UI.createLabel({
-		text : "Humidity: " + dbArray[3].relative_humidity,
+	
+	var fourthGroupLabel = Ti.UI.createLabel ({
+		text : "Humidity: " + dbArray[0].humidity + "  "+ "Wind MPH: " + dbArray[0].wind + "  "+ "Feels like: " + dbArray[0].feelslike + "\u00B0",
 		backgroundColor : "#6a777a",
 		color : "#fff",
 		height : 100,
 		width : "100%",
 		textAlign : "center",
 		font : {
-			fontSize : 44
+			fontSize : 20
 		}
 	});
-
-	var windLabel = Ti.UI.createLabel({
-		text : "Wind MPH: " + dbArray[4].wind_mph,
+	
+	var fifthGroupLabel = Ti.UI.createLabel({
+		text : "Wind Direction: " + dbArray[0].wind_dir + "  " + "Wind Gust: " + dbArray[0].wind_gust + "  " + "Wind Degrees: " + dbArray[0].wind_degrees,
 		backgroundColor : "#64350d",
 		color : "#fff",
 		height : 100,
 		width : "100%",
 		textAlign : "center",
 		font : {
-			fontSize : 44
+			fontSize : 20
 		}
 	});
 
-	var feelslike_fLabel = Ti.UI.createLabel({
-		text : "Feels Like: " + dbArray[5].feelslike_f + "\u00B0",
+	var sixthGroupLabel = Ti.UI.createLabel({
+		text : "Visibility: " + dbArray[0].visibility + "  " + "Pressure: " + dbArray[0].pressure + "  " + "Dewpoint: " + dbArray[0].dewpoint,
 		backgroundColor : "#74bfd4",
 		color : "#fff",
 		height : 100,
 		width : "100%",
 		textAlign : "center",
 		font : {
-			fontSize : 44
+			fontSize : 20
+		}
+	});
+	
+	var seventhGroupLabel = Ti.UI.createLabel({
+		text : "Wind Chill: " + dbArray[0].windchill + "  " + "Precipitation: " + dbArray[0].rain + "  " + "Heat Index: " + dbArray[0].heat_index,
+		backgroundColor : "#f2c641",
+		color : "#fff",
+		height : 100,
+		width : "100%",
+		textAlign : "center",
+		font : {
+			fontSize : 20
 		}
 	});
 
 	win.add(cityLabel);
 	win.add(tempLabel);
 	win.add(weatherLabel);
-	win.add(humidityLabel);
-	win.add(windLabel);
-	win.add(feelslike_fLabel);
+	win.add(fourthGroupLabel);
+	win.add(fifthGroupLabel);
+	win.add(sixthGroupLabel);
+	win.add(seventhGroupLabel);
 
 	win.open();
 };

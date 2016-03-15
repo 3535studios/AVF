@@ -1,0 +1,1 @@
+if(Ti.UI.setBackgroundColor("#000"),Ti.Network.online===!0){var geoModule=require("geo");geoModule.geoData()}else{var localStorage=require("db");localStorage.read()}

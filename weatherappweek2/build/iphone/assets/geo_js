@@ -1,0 +1,1 @@
+var geoData=function(){if("android"===Ti.Platform.osname){var e=34.04839324951172,i=-84.08440399169922,r=require("api");r.apiData(e,i)}else Ti.Geolocation.getCurrentPosition(function(e){console.log(e);var i=e.coords.latitude,r=e.coords.longitude,t=require("api");t.apiData(i,r)})};exports.geoData=geoData;
