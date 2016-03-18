@@ -20294,3 +20294,115 @@ Unexpected character (A) at position 0.
 
 !ENTRY com.appcelerator.titanium.core 4 0 2016-03-15 01:06:45.265
 !MESSAGE (Build 4.5.0.201602170821) [ERROR]  Location to be watched doesn't exist: /Library/Application Support/Titanium/modules
+!SESSION 2016-03-17 22:56:36.796 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/sequestermckinney/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/sequestermckinney/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2016-03-17 22:56:42.163
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.appcelerator.titanium.core 4 0 2016-03-17 22:56:44.418
+!MESSAGE (Build 4.5.0.1446607552) [ERROR]  Unrecognized token 'A': was expecting ('true', 'false' or 'null')
+ at [Source: A new update (5.2.0-265) is available... Download with appc use 5.2.0-265
+{
+  "username": "quest@3535studios.com",
+  "org_name": "3535 Studios",
+  "org_id": 100030350
+}; line: 1, column: 2]
+!STACK 0
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'A': was expecting ('true', 'false' or 'null')
+ at [Source: A new update (5.2.0-265) is available... Download with appc use 5.2.0-265
+{
+  "username": "quest@3535studios.com",
+  "org_name": "3535 Studios",
+  "org_id": 100030350
+}; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1486)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2300)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1459)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:683)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:3600)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3545)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2134)
+	at com.appcelerator.titanium.core.internal.cli.NodeAppcCLI.isLoggedIn(NodeAppcCLI.java:523)
+	at com.appcelerator.titanium.core.user.TitaniumUserManager.hasSignedInUser(TitaniumUserManager.java:513)
+	at com.appcelerator.titanium.core.user.TitaniumUserManager.addUserListener(TitaniumUserManager.java:626)
+	at com.appcelerator.titanium.core.TitaniumCorePlugin$1.run(TitaniumCorePlugin.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.core 4 0 2016-03-17 22:56:44.906
+!MESSAGE (Build 4.5.0.1446607552) [ERROR]  null
+!STACK 0
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:503)
+	at java.lang.UNIXProcess.waitFor(UNIXProcess.java:262)
+	at com.aptana.core.util.ProcessRunner.processData(ProcessRunner.java:381)
+	at com.aptana.core.util.ProcessRunner.processData(ProcessRunner.java:345)
+	at com.aptana.core.util.ProcessRunner.processResult(ProcessRunner.java:432)
+	at com.appcelerator.titanium.core.internal.cli.NodeAppcCLI.runCommand(NodeAppcCLI.java:238)
+	at com.appcelerator.titanium.rcp.handlers.TitaniumSplashHandler.verifyAppcWhoami(TitaniumSplashHandler.java:1218)
+	at com.appcelerator.titanium.rcp.handlers.TitaniumSplashHandler.access$4(TitaniumSplashHandler.java:1215)
+	at com.appcelerator.titanium.rcp.handlers.TitaniumSplashHandler$3.run(TitaniumSplashHandler.java:303)
+
+!ENTRY com.appcelerator.titanium.rcp 4 0 2016-03-17 22:56:44.909
+!MESSAGE (Build 4.5.0.1446607552) [ERROR]  Failed to check login status. Likely not logged in.
+
+!ENTRY com.appcelerator.titanium.core 4 0 2016-03-17 22:57:03.762
+!MESSAGE (Build 4.5.0.201602170821) [ERROR]  Location to be watched doesn't exist: /Library/Application Support/Titanium/mobilesdk/osx
+
+!ENTRY com.appcelerator.titanium.core 4 0 2016-03-17 22:57:03.764
+!MESSAGE (Build 4.5.0.201602170821) [ERROR]  Location to be watched doesn't exist: /Library/Application Support/Titanium/modules
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2016-03-17 22:57:12.123
+!MESSAGE (Build 4.5.0.201602170821) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK windows
+
+!ENTRY com.aptana.samples 4 0 2016-03-17 22:57:12.125
+!MESSAGE (Build 4.5.0.201602170821) [ERROR]  Unable to retrieve the icon at null for sample Apple WatchOS2
+
+!ENTRY com.aptana.samples 4 0 2016-03-17 22:57:12.127
+!MESSAGE (Build 4.5.0.201602170821) [ERROR]  Unable to retrieve the icon at null for sample iOS 9 App Search
+
+!ENTRY com.aptana.samples 4 0 2016-03-17 22:57:12.128
+!MESSAGE (Build 4.5.0.201602170821) [ERROR]  Unable to retrieve the icon at null for sample Ti SDK 4.1 Example App
+
+!ENTRY com.aptana.samples 4 0 2016-03-17 22:57:12.130
+!MESSAGE (Build 4.5.0.201602170821) [ERROR]  Unable to retrieve the icon at null for sample Employee Directory
+
+!ENTRY com.aptana.samples 4 0 2016-03-17 22:57:12.131
+!MESSAGE (Build 4.5.0.201602170821) [ERROR]  Unable to retrieve the icon at null for sample Movies
+
+!ENTRY com.aptana.samples 4 0 2016-03-17 22:57:12.133
+!MESSAGE (Build 4.5.0.201602170821) [ERROR]  Unable to retrieve the icon at null for sample Geocoder
+
+!ENTRY com.aptana.samples 4 0 2016-03-17 22:57:12.135
+!MESSAGE (Build 4.5.0.201602170821) [ERROR]  Unable to retrieve the icon at null for sample Rss Reader
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2016-03-17 22:57:25.509
+!MESSAGE (Build 4.5.0.201602170821) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK windows
+
+!ENTRY com.aptana.samples 4 0 2016-03-17 22:57:25.510
+!MESSAGE (Build 4.5.0.201602170821) [ERROR]  Unable to retrieve the icon at null for sample Apple WatchOS2
+
+!ENTRY com.aptana.samples 4 0 2016-03-17 22:57:25.511
+!MESSAGE (Build 4.5.0.201602170821) [ERROR]  Unable to retrieve the icon at null for sample iOS 9 App Search
+
+!ENTRY com.aptana.samples 4 0 2016-03-17 22:57:25.512
+!MESSAGE (Build 4.5.0.201602170821) [ERROR]  Unable to retrieve the icon at null for sample Ti SDK 4.1 Example App
+
+!ENTRY com.aptana.samples 4 0 2016-03-17 22:57:25.513
+!MESSAGE (Build 4.5.0.201602170821) [ERROR]  Unable to retrieve the icon at null for sample Employee Directory
+
+!ENTRY com.aptana.samples 4 0 2016-03-17 22:57:25.515
+!MESSAGE (Build 4.5.0.201602170821) [ERROR]  Unable to retrieve the icon at null for sample Movies
+
+!ENTRY com.aptana.samples 4 0 2016-03-17 22:57:25.516
+!MESSAGE (Build 4.5.0.201602170821) [ERROR]  Unable to retrieve the icon at null for sample Geocoder
+
+!ENTRY com.aptana.samples 4 0 2016-03-17 22:57:25.516
+!MESSAGE (Build 4.5.0.201602170821) [ERROR]  Unable to retrieve the icon at null for sample Rss Reader
