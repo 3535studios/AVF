@@ -1,0 +1,16 @@
+/* Wal-Mart Store Locator App Story *
+ * 
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+
+
+//main background for the app
+Ti.UI.setBackgroundColor('#000');
+

@@ -1,0 +1,20 @@
+/* Wal-Mart Store Locator App Story *
+ * 
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+
+if(Ti.Network.online === true) {
+	var geoModule = require("geo");
+		geoModule.getGeo();
+}
+
+//main background for the app
+Ti.UI.setBackgroundColor('#000');
+
