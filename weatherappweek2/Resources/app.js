@@ -1,4 +1,4 @@
-/* walmart app story
+/* weather app story
 
 *
 * //check network connectivity (app.js)
