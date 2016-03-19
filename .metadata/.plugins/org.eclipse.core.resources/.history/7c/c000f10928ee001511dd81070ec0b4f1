@@ -2,17 +2,13 @@ var storeUI = function(storeInfo) {
 	
 	var win = Ti.UI.createWindow({
 		backgroundColor: "#fff",
-		layout: "horizontal"
-	});
-	
-	var mainScrollView = Ti.UI.ScrollView({
-			
+		layout: "vertical"
 	});
 	
 	var storeOneView = Ti.UI.createView({
 		height: 350,
 		width: 350,
-		top: 40,
+		top: 20,
 		left: 20,
 		backgroundColor: "#2277cc"
 	});
@@ -20,7 +16,7 @@ var storeUI = function(storeInfo) {
 	var storeTwoView = Ti.UI.createView({
 		height: 350,
 		width: 350,
-		top: 40,
+		top: 20,
 		left: 20,
 		backgroundColor: "#1d5fa8"
 	});

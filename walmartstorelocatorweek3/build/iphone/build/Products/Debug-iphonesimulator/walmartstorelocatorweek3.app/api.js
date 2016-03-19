@@ -12,7 +12,6 @@ var walMartApiData = function(lat, lon) {
 			console.log(json);
 			var storeInfo = {
 				name: json.name,
-				text: "This is a test",
 				zip: json.zip,
 				phone: json.phoneNumber,
 				address: json.streetAddress,

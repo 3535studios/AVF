@@ -1,0 +1,21 @@
+var storeUI = function(storeInfo) {
+	
+	var win = Ti.UI.createWindow({
+		backgroundColor: "#fff",
+		layout: "vertical"
+	});
+	
+	var storeView = Ti.UI.createView({
+		height: 250,
+		width: 250,
+		top: 20,
+		left: 0,
+		backgroundColor: "#2277cc"
+	});
+	
+	win.add(storeView);
+	
+	win.open();
+};
+
+exports.storeUI = storeUI;
