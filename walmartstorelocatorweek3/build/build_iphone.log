@@ -1,5 +1,5 @@
 
-3/19/2016, 7:13:33 PM
+3/19/2016, 8:57:48 PM
 
 Operating System
   Name                        = Mac OS X
@@ -21,7 +21,7 @@ Titanium SDK
   Target Platform             = iphone
 
 Command
-  /usr/local/bin/node /Users/sequestermckinney/.appcelerator/install/5.2.0/package/node_modules/titanium/lib/titanium.js build run --platform ios --log-level trace --sdk 5.2.0.GA --project-dir /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3 --target simulator --ios-version 9.2 --device-family universal --deploy-type development --sim-type ipad --sim-version 9.0 --device-id B9A2FABA-EC2E-4162-BCFF-F4E528347DD5 --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 58392 --config-file /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/build-1458429211511.json --no-banner --project-dir /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3
+  /usr/local/bin/node /Users/sequestermckinney/.appcelerator/install/5.2.0/package/node_modules/titanium/lib/titanium.js build run --platform ios --log-level trace --sdk 5.2.0.GA --project-dir /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3 --target simulator --ios-version 9.2 --device-family universal --deploy-type development --sim-type ipad --sim-version 9.0 --device-id B9A2FABA-EC2E-4162-BCFF-F4E528347DD5 --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 58392 --config-file /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/build-1458435466739.json --no-banner --project-dir /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3
 
 [TRACE]  [ioslib] Validating iOS Simulator UDID B9A2FABA-EC2E-4162-BCFF-F4E528347DD5
 [TRACE]  [ioslib] Found iOS Simulator UDID B9A2FABA-EC2E-4162-BCFF-F4E528347DD5
@@ -94,7 +94,7 @@ Command
 [INFO]   Initializing the build directory
 [TRACE]  offline build file /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/build-de5b98c19908e5ca31d2fb7dc33dd7e68700709f.json
 [TRACE]  online 1
-[TRACE]  optimizing build, last build was 4837.358 sec ago
+[TRACE]  optimizing build, last build was 11092.575 sec ago
 [INFO]   Creating Xcode project
 [TRACE]  Removing pre-compile phase
 [TRACE]  No native module libraries to add
@@ -200,13 +200,13 @@ Command
 [INFO]   Removing files
 [DEBUG]  Removing empty directories
 [INFO]   Skipping xcodebuild
-[INFO]   Finished building the application in 1s 21ms
+[INFO]   Finished building the application in 995ms
 [INFO]   Launching iOS Simulator
 [TRACE]  [ioslib] Selected iOS Simulator: iPad 2
 [TRACE]  [ioslib]   UDID    = B9A2FABA-EC2E-4162-BCFF-F4E528347DD5
 [TRACE]  [ioslib]   iOS     = 9.0
 [TRACE]  [ioslib] Autoselected Xcode: 7.2.1
-[TRACE]  [ioslib] Removing old log file: /Users/sequestermckinney/Library/Developer/CoreSimulator/Devices/B9A2FABA-EC2E-4162-BCFF-F4E528347DD5/data/Containers/Data/Application/575D6734-94B2-4E48-BCAC-65F3759542A1/Documents/179cfa0e-d220-4b5c-9222-48a02d72c920.log
+[TRACE]  [ioslib] Removing old log file: /Users/sequestermckinney/Library/Developer/CoreSimulator/Devices/B9A2FABA-EC2E-4162-BCFF-F4E528347DD5/data/Containers/Data/Application/05218A06-670D-48B5-9FBF-006EB2A1BFF5/Documents/179cfa0e-d220-4b5c-9222-48a02d72c920.log
 [TRACE]  [ioslib] iPad 2 Simulator already running with the correct udid
 [TRACE]  [ioslib] Tailing iPad 2 Simulator system log: /Users/sequestermckinney/Library/Logs/CoreSimulator/B9A2FABA-EC2E-4162-BCFF-F4E528347DD5/system.log
 [TRACE]  [ioslib] Running: osascript "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/node_modules/ioslib/lib/sim_focus.scpt" "Simulator"
@@ -215,8 +215,8 @@ Command
 [TRACE]  [ioslib] App installed
 [TRACE]  [ioslib] Running: /Applications/Xcode.app/Contents/Developer/usr/bin/simctl launch B9A2FABA-EC2E-4162-BCFF-F4E528347DD5 com.studios.walmartstorelocatorweek3
 [TRACE]  [ioslib] App launched
-[TRACE]  [ioslib] Found application log file: /Users/sequestermckinney/Library/Developer/CoreSimulator/Devices/B9A2FABA-EC2E-4162-BCFF-F4E528347DD5/data/Containers/Data/Application/67BEDB17-9237-44AE-B846-B94374724E9F/Documents/179cfa0e-d220-4b5c-9222-48a02d72c920.log
+[TRACE]  [ioslib] Found application log file: /Users/sequestermckinney/Library/Developer/CoreSimulator/Devices/B9A2FABA-EC2E-4162-BCFF-F4E528347DD5/data/Containers/Data/Application/90A65126-7F16-4F5D-98A7-9FA73F2A91F6/Documents/179cfa0e-d220-4b5c-9222-48a02d72c920.log
 [TRACE]  [walmartstorelocatorweek3] assertion failed: 15D21 13A344: libxpc.dylib + 71578 [5150F854-0B13-3C60-8B86-891EC976986E]: 0x7d
-[TRACE]  [walmartstorelocatorweek3] <CATransformLayer: 0x7a3674f0> - changing property masksToBounds in transform-only layer, will have no effect
-[TRACE]  [walmartstorelocatorweek3] <CATransformLayer: 0x79670c90> - changing property masksToBounds in transform-only layer, will have no effect
-[TRACE]  [walmartstorelocatorweek3] <CATransformLayer: 0x7a05c4a0> - changing property masksToBounds in transform-only layer, will have no effect
+[TRACE]  [walmartstorelocatorweek3] <CATransformLayer: 0x78e41c00> - changing property masksToBounds in transform-only layer, will have no effect
+[TRACE]  [walmartstorelocatorweek3] <CATransformLayer: 0x7a13a6a0> - changing property masksToBounds in transform-only layer, will have no effect
+[TRACE]  [walmartstorelocatorweek3] <CATransformLayer: 0x7a13cd50> - changing property masksToBounds in transform-only layer, will have no effect
