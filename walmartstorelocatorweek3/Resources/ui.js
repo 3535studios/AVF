@@ -5,6 +5,171 @@ var storeUI = function(storeInfo, storeInfo1, storeInfo2, storeInfo3) {
 		layout: "horizontal"
 	});
 	
+	var receiptBtn = Ti.UI.createView({
+		height: 50,
+		width: 200,
+		backgroundColor: "#eee",
+		top: 250,
+		
+	});
+	
+	var cameraLabel = Ti.UI.createLabel({
+		text: "Take Receipt Photo",
+		color: "#000"
+	});
+	
+	var receiptBtn1 = Ti.UI.createView({
+		height: 50,
+		width: 200,
+		backgroundColor: "#eee",
+		top: 250,
+		
+	});
+   
+	var cameraLabel1 = Ti.UI.createLabel({
+		text: "Take Receipt Photo",
+		color: "#000"
+	});
+	
+	var receiptBtn2 = Ti.UI.createView({
+		height: 50,
+		width: 200,
+		backgroundColor: "#eee",
+		top: 250,
+		
+	});
+   
+	var cameraLabel2 = Ti.UI.createLabel({
+		text: "Take Receipt Photo",
+		color: "#000"
+	});
+	
+	var receiptBtn3 = Ti.UI.createView({
+		height: 50,
+		width: 200,
+		backgroundColor: "#eee",
+		top: 250,
+		
+	});
+   
+	var cameraLabel3 = Ti.UI.createLabel({
+		text: "Take Receipt Photo",
+		color: "#000"
+	});
+	
+	receiptBtn.addEventListener('click', function(e){
+	
+	Ti.Media.showCamera({
+			success : function(event) {
+				alert('Your photo was saved to the Photo Gallery');
+			},
+			cancel : function() {
+			},
+			error : function(error) {
+				var message;
+				if (error.code == Ti.Media.NO_CAMERA) {
+					message = 'This device does not have a camera or recording capabilities';
+				} else {
+					message = 'Unexpected error: ' + error.code;
+				}
+		
+				Ti.UI.createAlertDialog({
+					title : 'Camera',
+					message : message
+				}).show();
+			},
+			saveToPhotoGallery : true,
+			allowEditing : true,
+			mediaTypes : [Ti.Media.MEDIA_TYPE_VIDEO,Ti.Media.MEDIA_TYPE_PHOTO]
+		});
+		
+		});
+		
+		receiptBtn1.addEventListener('click', function(e){
+	
+	Ti.Media.showCamera({
+			success : function(event) {
+				alert('Your photo was saved to the Photo Gallery');
+			},
+			cancel : function() {
+			},
+			error : function(error) {
+				var message;
+				if (error.code == Ti.Media.NO_CAMERA) {
+					message = 'This device does not have a camera or recording capabilities';
+				} else {
+					message = 'Unexpected error: ' + error.code;
+				}
+		
+				Ti.UI.createAlertDialog({
+					title : 'Camera',
+					message : message
+				}).show();
+			},
+			saveToPhotoGallery : true,
+			allowEditing : true,
+			mediaTypes : [Ti.Media.MEDIA_TYPE_VIDEO,Ti.Media.MEDIA_TYPE_PHOTO]
+		});
+		
+		});
+		
+		receiptBtn2.addEventListener('click', function(e){
+	
+	Ti.Media.showCamera({
+			success : function(event) {
+				alert('Your photo was saved to the Photo Gallery');
+			},
+			cancel : function() {
+			},
+			error : function(error) {
+				var message;
+				if (error.code == Ti.Media.NO_CAMERA) {
+					message = 'This device does not have a camera or recording capabilities';
+				} else {
+					message = 'Unexpected error: ' + error.code;
+				}
+		
+				Ti.UI.createAlertDialog({
+					title : 'Camera',
+					message : message
+				}).show();
+			},
+			saveToPhotoGallery : true,
+			allowEditing : true,
+			mediaTypes : [Ti.Media.MEDIA_TYPE_VIDEO,Ti.Media.MEDIA_TYPE_PHOTO]
+		});
+		
+		});
+		
+		receiptBtn3.addEventListener('click', function(e){
+	
+	Ti.Media.showCamera({
+			success : function(event) {
+				alert('Your photo was saved to the Photo Gallery');
+			},
+			cancel : function() {
+			},
+			error : function(error) {
+				var message;
+				if (error.code == Ti.Media.NO_CAMERA) {
+					message = 'This device does not have a camera or recording capabilities';
+				} else {
+					message = 'Unexpected error: ' + error.code;
+				}
+		
+				Ti.UI.createAlertDialog({
+					title : 'Camera',
+					message : message
+				}).show();
+			},
+			saveToPhotoGallery : true,
+			allowEditing : true,
+			mediaTypes : [Ti.Media.MEDIA_TYPE_VIDEO,Ti.Media.MEDIA_TYPE_PHOTO]
+		});
+		
+		});
+	
+	
 	var storeView = Ti.UI.createView({
 		height: 350,
 		width: 350,
@@ -245,6 +410,8 @@ var storeUI = function(storeInfo, storeInfo1, storeInfo2, storeInfo3) {
 		top: 160
 	}); 
 	
+	storeView.add(receiptBtn);
+	receiptBtn.add(cameraLabel);
 	storeView.add(storeLabel);
 	storeView.add(addressLabel);
 	storeView.add(cityLabel);
@@ -252,6 +419,8 @@ var storeUI = function(storeInfo, storeInfo1, storeInfo2, storeInfo3) {
 	storeView.add(phoneLabel);
 	win.add(storeView);
 	
+	storeOneView.add(receiptBtn1);
+	receiptBtn1.add(cameraLabel1);
 	storeOneView.add(storeOneLabel);
 	storeOneView.add(addressOneLabel);
 	storeOneView.add(cityOneLabel);
@@ -259,6 +428,8 @@ var storeUI = function(storeInfo, storeInfo1, storeInfo2, storeInfo3) {
 	storeOneView.add(phoneOneLabel);
 	win.add(storeOneView);
 	
+	storeTwoView.add(receiptBtn2);
+	receiptBtn2.add(cameraLabel2);
 	storeTwoView.add(storeTwoLabel);
 	storeTwoView.add(addressTwoLabel);
 	storeTwoView.add(cityTwoLabel);
@@ -266,6 +437,8 @@ var storeUI = function(storeInfo, storeInfo1, storeInfo2, storeInfo3) {
 	storeTwoView.add(phoneTwoLabel);
 	win.add(storeTwoView);
 	
+	storeThreeView.add(receiptBtn3);
+	receiptBtn3.add(cameraLabel3);
 	storeThreeView.add(storeThreeLabel);
 	storeThreeView.add(addressThreeLabel);
 	storeThreeView.add(cityThreeLabel);

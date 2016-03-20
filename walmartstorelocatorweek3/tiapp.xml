@@ -5,7 +5,7 @@
     <version>1.0</version>
     <publisher>sequestermckinney</publisher>
     <url>http://www.3535studios.com</url>
-    <description/>
+    <description>undefined</description>
     <copyright>2016 by sequestermckinney</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
@@ -17,7 +17,7 @@
         <enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
         <plist>
             <dict>
-            	<key>NSLocationAlwaysUsageDescription</key>
+                <key>NSLocationAlwaysUsageDescription</key>
                 <array>
                     <string>Please allow the app to access your Location to find your closest Wal-Mart store.</string>
                 </array>

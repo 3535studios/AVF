@@ -1,10 +1,10 @@
 var getGeo = function() {
 	if (Ti.Platform.osname === "android") {
 		var lat = 34.04839324951172;
-		var lng = -84.08440399169922;
+		var lon = -84.08440399169922;
 		//imports the api module into the geo module, pass lat, lng to api module
 		var apiModule = require("api");
-			apiModule.apiData(lat, lng);
+			apiModule.walMartApiData(lat, lon);
 	} else {
 		Ti.Geolocation.getCurrentPosition(function(p) {
 			console.log(p);

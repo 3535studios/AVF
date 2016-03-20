@@ -1,0 +1,30 @@
+var camera = function(){
+	
+		var uiModule = require("ui");
+		//uiModule.storeUI(camera);
+receiptBtn.addEventListener('click', function(e){
+	Ti.Media.showCamera({
+		saveToPhotoGallery: true,
+		allowEditing: false,
+		mediaTypes: [Ti.Media.MEDIA_TYPE_VIDEO,Ti.Media.MEDIA_TYPE_PHOTO],
+		success: function(e) {
+			if(e.mediaType === Ti.Media.MEDIA_TYPE_PHOTO) {
+				ui.cameraView.image =  e.media;
+			} else {
+				alert("This is not a photo, it is:" + e.mediaType);
+			}
+		},
+		error: function(error) {
+			if (error.code === Ti.Media.NO_CAMERA) {
+				alert("please run this on a device");
+			} else {
+				alert("other error: " + error.code);
+			}
+		}
+	}); 
+	
+}); 
+
+};
+
+exports.camera = camera;

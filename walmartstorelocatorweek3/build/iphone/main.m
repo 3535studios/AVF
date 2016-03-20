@@ -7,13 +7,13 @@
 #define _QUOTEME(x) #x
 #define STRING(x) _QUOTEME(x)
 
-NSString * const TI_APPLICATION_DEPLOYTYPE = @"development";
+NSString * const TI_APPLICATION_DEPLOYTYPE = @"test";
 NSString * const TI_APPLICATION_ID = @"com.studios.walmartstorelocatorweek3";
 NSString * const TI_APPLICATION_PUBLISHER = @"sequestermckinney";
 NSString * const TI_APPLICATION_URL = @"http://www.3535studios.com";
 NSString * const TI_APPLICATION_NAME = @"walmartstorelocatorweek3";
 NSString * const TI_APPLICATION_VERSION = @"1.0";
-NSString * const TI_APPLICATION_DESCRIPTION = @"";
+NSString * const TI_APPLICATION_DESCRIPTION = @"undefined";
 NSString * const TI_APPLICATION_COPYRIGHT = @"2016 by sequestermckinney";
 NSString * const TI_APPLICATION_GUID = @"179cfa0e-d220-4b5c-9222-48a02d72c920";
 BOOL const TI_APPLICATION_ANALYTICS = true;

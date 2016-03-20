@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.appcelerator.titanium.mobile.ui.ios.installer.launchConfigurationType">
+<booleanAttribute key="ATTR_MINIFY" value="true"/>
+<stringAttribute key="ATTR_PROJECT_NAME" value="walmartstorelocatorweek3"/>
+<stringAttribute key="ATTR_TITANIUM_DEPLOY_TYPE" value="development"/>
+<booleanAttribute key="ATTR_UPLOAD_DEBUG_SYMBOLS" value="false"/>
+<stringAttribute key="appid" value="com.studios.walmartstorelocatorweek3"/>
+<stringAttribute key="certificate" value="Sequester McKinney (28G3T772NK)"/>
+<stringAttribute key="debug_config" value="::1458440260641:192.168.56.1,192.168.1.140"/>
+<stringAttribute key="debug_hosts" value="192.168.56.1,192.168.1.140"/>
+<stringAttribute key="device_id" value="6c7ad1bde05c886b0d60d7d29a18004bbb324a1b"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/walmartstorelocatorweek3"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.debug.core.capture_output" value="true"/>
+<booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="true"/>
+<stringAttribute key="process_factory_id" value="com.appcelerator.titanium.ui.logLevelFilteringProcessFactory"/>
+<stringAttribute key="sdk_version" value="9.2"/>
+<stringAttribute key="uuid" value="414742c8-aba2-4b6c-9843-9c93c52fcc5f"/>
+</launchConfiguration>
