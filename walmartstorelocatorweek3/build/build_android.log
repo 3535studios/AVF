@@ -1,5 +1,5 @@
 
-3/19/2016, 10:33:06 PM
+3/19/2016, 11:36:20 PM
 
 Operating System
   Name                        = Mac OS X
@@ -21,7 +21,7 @@ Titanium SDK
   Target Platform             = android
 
 Command
-  /usr/local/bin/node /Users/sequestermckinney/.appcelerator/install/5.2.0/package/node_modules/titanium/lib/titanium.js build run --platform android --log-level trace --sdk 5.2.0.GA --project-dir /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3 --target emulator --android-sdk /Users/sequestermckinney/Library/android-sdk-macosx --device-id Google Nexus 10 - 4.2.2 - API 17 - 2560x1600 --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 58392 --config-file /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/build-1458441182992.json --no-banner --project-dir /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3
+  /usr/local/bin/node /Users/sequestermckinney/.appcelerator/install/5.2.0/package/node_modules/titanium/lib/titanium.js build run --platform android --log-level trace --sdk 5.2.0.GA --project-dir /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3 --target emulator --android-sdk /Users/sequestermckinney/Library/android-sdk-macosx --device-id Google Nexus 10 - 4.2.2 - API 17 - 2560x1600 --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 50027 --config-file /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/build-1458444976514.json --no-banner --project-dir /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3
 
 [DEBUG]  Detecting modules in /Users/sequestermckinney/Library/Application Support/Titanium/modules
 [DEBUG]  Detected android module: com.appcelerator.apm 1.1.1 @ /Users/sequestermckinney/Library/Application Support/Titanium/modules/android/com.appcelerator.apm/1.1.1
@@ -88,21 +88,24 @@ Command
 [TRACE]  Detecting if Google Nexus 10 - 4.2.2 - API 17 - 2560x1600 exists...
 [TRACE]  Found 4 emulators
 [TRACE]  Emulator exists, detecting all running emulators and connected devices...
-[TRACE]  Detected 1 running emulators and connected devices
-[TRACE]  Checking 1 devices to see if it's the emulator we want
-[TRACE]  The emulator is running
-[INFO]   Emulator already running
+[TRACE]  Detected 0 running emulators and connected devices
+[TRACE]  Emulator not running, detecting running emulators
+[TRACE]  Found 4 emulators
+[TRACE]  Starting the emulator...
+[INFO]   Running: /Applications/Genymotion.app/Contents/MacOS/player.app/Contents/MacOS/player --vm-name "Google Nexus 10 - 4.2.2 - API 17 - 2560x1600"
+[TRACE]  Emulator is starting, monitoring boot state...
 [TRACE]  Checking the boot state for the next 240000 ms
 [TRACE]  Waiting for emulator to register with ADB
 [TRACE]  Emulator process started
 [TRACE]  offline build file /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/build-de5b98c19908e5ca31d2fb7dc33dd7e68700709f.json
 [TRACE]  online 1
-[TRACE]  optimizing build, last build was 16810.476 sec ago
+[TRACE]  optimizing build, last build was 20604.12 sec ago
 [DEBUG]  Copying /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/Resources
 [WARN]   Overwriting file /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/bin/assets/Resources/KS_nav_ui.png
 [DEBUG]  Symlinking /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/Resources/KS_nav_ui.png => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/bin/assets/Resources/KS_nav_ui.png
 [WARN]   Overwriting file /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/bin/assets/Resources/KS_nav_views.png
 [DEBUG]  Symlinking /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/Resources/KS_nav_views.png => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/bin/assets/Resources/KS_nav_views.png
+[TRACE]  No devices found, continuing to wait
 [DEBUG]  Ignoring /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/Resources/android
 [DEBUG]  Ignoring /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/Resources/iphone
 [DEBUG]  Ignoring /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/Resources/mobileweb
@@ -130,13 +133,6 @@ Command
 [DEBUG]  Symlinking /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/Resources/ui.js => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/assets/ui.js
 [DEBUG]  Symlinking /Users/sequestermckinney/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.10/ti.cloud.js => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/assets/ti.cloud.js
 [INFO]   Encrypting JavaScript files: /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/titanium_prep.macos "com.studios.walmartstorelocatorweek3" "/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/assets" "api.js" "app.js" "geo.js" "ui.js" "ti.cloud.js" "_app_props_.json"
-[TRACE]  Found 1 devices, checking if any of them are the emulator...
-[TRACE]  Emulator is running!
-[TRACE]  Checking if boot animation has finished...
-[TRACE]  Emulator is booted, emitting booted event
-[INFO]   Emulator is booted
-[INFO]   SD card not required, skipping mount check
-[INFO]   Emulator ready!
 [DEBUG]  Adding library /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/kroll-v8.jar
 [DEBUG]  Adding library /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-analytics.jar
 [DEBUG]  Adding dependency library /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/aps-analytics.jar
@@ -172,39 +168,39 @@ Command
 [DEBUG]  Unknown namespace ui.ios, skipping
 [INFO]   Writing /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/bin/assets/app.json
 [INFO]   Extracting module resources: /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-analytics.res.zip
-[DEBUG]  Copying /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-69299-ulzd9k/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
+[DEBUG]  Copying /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-77130-19zoaat/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-android.res.zip
-[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-69299-1aa5gur/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-77130-xpptij/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-app.res.zip
-[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-69299-clur0k/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-77130-jjy3ql/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-filesystem.res.zip
-[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-69299-cx5ugi/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-77130-ry5x9i/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-media.res.zip
-[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-69299-1sjhf4y/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-77130-1muv6us/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-locale.res.zip
-[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-69299-w7ma95/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-77130-pl1bqv/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-network.res.zip
-[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-69299-17zxaak/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-77130-1pnrd0g/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-xml.res.zip
-[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-69299-1duv50f/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-77130-rnqsls/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-utils.res.zip
-[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-69299-4yt99p/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-77130-12x4kgj/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-geolocation.res.zip
-[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-69299-1igap3u/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-77130-s08zif/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-accelerometer.res.zip
-[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-69299-980cjw/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-77130-1w9q11a/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-contacts.res.zip
-[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-69299-1fk86kn/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-77130-1bcyz1k/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-map.res.zip
-[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-69299-11686re/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-77130-1hmqdfd/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-gesture.res.zip
-[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-69299-1pjf41/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-77130-1vbjzgl/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-calendar.res.zip
-[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-69299-1oghi75/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-77130-1kko5lw/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-platform.res.zip
-[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-69299-1kwqwt4/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-77130-2c4evt/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
 [INFO]   Extracting module resources: /Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-database.res.zip
-[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-69299-vcj9wr/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
+[DEBUG]  Merging /var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-77130-67pyic/res/values/strings.xml => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
 [DEBUG]  Removing old file: /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/.classpath
 [DEBUG]  Removing old file: /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/.gitignore
 [DEBUG]  Removing old file: /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/.project
@@ -222,9 +218,31 @@ Command
 [INFO]   Generating i18n files
 [DEBUG]  Merging en strings => /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/strings.xml
 [INFO]   Generating /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res/values/theme.xml
-[INFO]   Packaging application: /Users/sequestermckinney/Library/android-sdk-macosx/build-tools/23.0.1/aapt "package" "-f" "-m" "-J" "/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/gen" "-M" "/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/AndroidManifest.xml" "-A" "/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/bin/assets" "-S" "/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res" "-I" "/Users/sequestermckinney/Library/android-sdk-macosx/platforms/android-23/android.jar" "-F" "/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/bin/app.ap_" "--auto-add-overlay" "--extra-packages" "ti.modules.titanium.ui:android.support.v7.appcompat:android.support.v7.cardview" "-S" "/var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-69299-19v2nkx/res" "-S" "/var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-69299-13dlnqq/res" "-S" "/var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-69299-96xr2m/res"
+[INFO]   Packaging application: /Users/sequestermckinney/Library/android-sdk-macosx/build-tools/23.0.1/aapt "package" "-f" "-m" "-J" "/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/gen" "-M" "/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/AndroidManifest.xml" "-A" "/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/bin/assets" "-S" "/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/res" "-I" "/Users/sequestermckinney/Library/android-sdk-macosx/platforms/android-23/android.jar" "-F" "/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/bin/app.ap_" "--auto-add-overlay" "--extra-packages" "ti.modules.titanium.ui:android.support.v7.appcompat:android.support.v7.cardview" "-S" "/var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-77130-zyq9j7/res" "-S" "/var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-77130-1w0cc54/res" "-S" "/var/folders/zc/l695h7fx1q11pz4v2tgdbvxr0000gn/T/116219-77130-1jf8776/res"
 [INFO]   Building Java source files: /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/bin/javac "-J-Xmx1024M" "-encoding" "utf8" "-bootclasspath" "/Users/sequestermckinney/Library/android-sdk-macosx/platforms/android-23/android.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/kroll-v8.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-analytics.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/aps-analytics.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-android.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/jaxen-1.1.1.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/ti-commons-codec-1.3.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/kroll-common.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/titanium.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-app.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-ui.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/nineoldandroids-appc-2.4.0.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-filesystem.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-media.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-appcompat.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/android-support-v4.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/android-support-v7-appcompat.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-cardview.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/cardview-v7-23.0.1.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-locale.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-network.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-xml.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-utils.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-geolocation.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-accelerometer.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-contacts.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-map.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-gesture.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-calendar.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-platform.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-database.jar:/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/lib/titanium-verify.jar:R.class:AssetCryptImpl.class:Walmartstorelocatorweek3Activity.class:Walmartstorelocatorweek3AppInfo.class:Walmartstorelocatorweek3Application.class" "-d" "/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/bin/classes" "-proc:none" "-target" "1.6" "-source" "1.6" "@/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/java-sources.txt"
 [INFO]   Running dexer: /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/bin/java "-Xmx1024M" "-XX:-UseGCOverheadLimit" "-Djava.ext.dirs=/Users/sequestermckinney/Library/android-sdk-macosx/platform-tools" "-jar" "/Users/sequestermckinney/Library/android-sdk-macosx/build-tools/23.0.1/lib/dx.jar" "--dex" "--output=/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/bin/classes.dex" "/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/bin/classes" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/lib/titanium-verify.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/kroll-v8.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-analytics.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/aps-analytics.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-android.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/jaxen-1.1.1.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/ti-commons-codec-1.3.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/kroll-common.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/titanium.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-app.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-ui.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/nineoldandroids-appc-2.4.0.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-filesystem.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-media.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-appcompat.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/android-support-v4.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/android-support-v7-appcompat.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-cardview.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/cardview-v7-23.0.1.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-locale.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-network.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-xml.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-utils.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-geolocation.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-accelerometer.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-contacts.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-map.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-gesture.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-calendar.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-platform.jar" "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/android/modules/titanium-database.jar"
+[TRACE]  Found 1 devices, checking if any of them are the emulator...
+[TRACE]  Found 1 devices, checking if any of them are the emulator...
+[TRACE]  Emulator is running!
+[TRACE]  Checking if boot animation has finished...
+[TRACE]  Emulator is not booted yet; checking again in 2000 ms
+[TRACE]  Emulator is running!
+[TRACE]  Checking if boot animation has finished...
+[TRACE]  Emulator is not booted yet; checking again in 2000 ms
+[TRACE]  Emulator is not booted yet; checking again in 2000 ms
+[TRACE]  Emulator is not booted yet; checking again in 2000 ms
+[TRACE]  Emulator is not booted yet; checking again in 2000 ms
+[TRACE]  Emulator is not booted yet; checking again in 2000 ms
+[TRACE]  Emulator is not booted yet; checking again in 2000 ms
+[TRACE]  Emulator is not booted yet; checking again in 2000 ms
+[TRACE]  Emulator is booted, emitting booted event
+[INFO]   Emulator is booted
+[INFO]   SD card not required, skipping mount check
+[INFO]   Emulator ready!
+[TRACE]  Emulator is booted, emitting booted event
+[INFO]   Emulator is booted
+[INFO]   SD card not required, skipping mount check
+[INFO]   Emulator ready!
 [INFO]   Creating unsigned apk
 [DEBUG]  Processing /Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek3/build/android/bin/app.ap_
 [DEBUG]  Deflating AndroidManifest.xml
@@ -622,5 +640,65 @@ Command
 [INFO]   App successfully installed
 [INFO]   Starting app: com.studios.walmartstorelocatorweek3/.Walmartstorelocatorweek3Activity
 [DEBUG]  Trying to start the app...
-[INFO]   Application pid: 1332
-[INFO]   Project built successfully in 23s 373ms
+[INFO]   Application pid: 1246
+-- Start application log -----------------------------------------------------
+[INFO]   TiApplication: (main) [0,0] checkpoint, app created.
+[DEBUG]  dalvikvm: GC_CONCURRENT freed 164K, 10%% free 2582K/2864K, paused 2ms+0ms, total 4ms
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed 257K, 16%% free 2676K/3160K, paused 2ms, total 2ms
+[DEBUG]  dalvikvm: GC_CONCURRENT freed 184K, 10%% free 2880K/3180K, paused 2ms+0ms, total 4ms
+[INFO]   TiApplication: (main) [28,28] Titanium 5.2.0 (2016/02/20 08:05 384775e)
+[DEBUG]  dalvikvm: GC_CONCURRENT freed 273K, 12%% free 2996K/3384K, paused 0ms+2ms, total 3ms
+[DEBUG]  dalvikvm: Trying to load lib /data/app-lib/com.studios.walmartstorelocatorweek3-2/libtiverify.so 0xa64758d0
+[DEBUG]  dalvikvm: Added shared lib /data/app-lib/com.studios.walmartstorelocatorweek3-2/libtiverify.so 0xa64758d0
+[INFO]   TiApplication: (main) [13,41] Titanium Javascript runtime: v8
+[DEBUG]  dalvikvm: Trying to load lib /data/app-lib/com.studios.walmartstorelocatorweek3-2/libstlport_shared.so 0xa64758d0
+[DEBUG]  dalvikvm: Added shared lib /data/app-lib/com.studios.walmartstorelocatorweek3-2/libstlport_shared.so 0xa64758d0
+[DEBUG]  dalvikvm: No JNI_OnLoad found in /data/app-lib/com.studios.walmartstorelocatorweek3-2/libstlport_shared.so 0xa64758d0, skipping init
+[DEBUG]  dalvikvm: Trying to load lib /data/app-lib/com.studios.walmartstorelocatorweek3-2/libkroll-v8.so 0xa64758d0
+[DEBUG]  dalvikvm: Added shared lib /data/app-lib/com.studios.walmartstorelocatorweek3-2/libkroll-v8.so 0xa64758d0
+[INFO]   TiRootActivity: (main) [0,0] checkpoint, on root activity create, savedInstanceState: null
+[ERROR]  E/        : UID 10053 asks for /proc/cpuinfo
+[ERROR]  E/        : Unable to open file /data/data/.appwithABI2
+[ERROR]  E/        : Unable to open file /data/data/.appwithABI2neon
+[ERROR]  E/        : UID 10053 is not in ARM UID list files
+[DEBUG]  dalvikvm: GC_CONCURRENT freed 195K, 11%% free 3185K/3572K, paused 2ms+1ms, total 4ms
+[INFO]   dalvikvm: Could not find method android.app.Activity.checkSelfPermission, referenced from method org.appcelerator.titanium.util.TiFileHelper2.hasStoragePermission
+[WARN]   dalvikvm: VFY: unable to resolve virtual method 27: Landroid/app/Activity;.checkSelfPermission (Ljava/lang/String;)I
+[DEBUG]  dalvikvm: VFY: replacing opcode 0x6e at 0x0017
+[WARN]   V8Object: (KrollRuntimeThread) [70,70] Runtime disposed, cannot set property 'userAgent'
+[INFO]   dalvikvm: Could not find method android.app.Activity.checkSelfPermission, referenced from method ti.modules.titanium.media.MediaModule.hasCameraPermission
+[WARN]   dalvikvm: VFY: unable to resolve virtual method 27: Landroid/app/Activity;.checkSelfPermission (Ljava/lang/String;)I
+[DEBUG]  dalvikvm: VFY: replacing opcode 0x6e at 0x0012
+[INFO]   dalvikvm: Could not find method android.app.Activity.checkSelfPermission, referenced from method ti.modules.titanium.media.MediaModule.hasStoragePermission
+[WARN]   dalvikvm: VFY: unable to resolve virtual method 27: Landroid/app/Activity;.checkSelfPermission (Ljava/lang/String;)I
+[DEBUG]  dalvikvm: VFY: replacing opcode 0x6e at 0x0012
+[INFO]   dalvikvm: Could not find method android.app.Activity.checkSelfPermission, referenced from method ti.modules.titanium.media.MediaModule.hasCameraPermissions
+[WARN]   dalvikvm: VFY: unable to resolve virtual method 27: Landroid/app/Activity;.checkSelfPermission (Ljava/lang/String;)I
+[DEBUG]  dalvikvm: VFY: replacing opcode 0x6e at 0x0012
+[INFO]   dalvikvm: Could not find method android.app.Activity.requestPermissions, referenced from method ti.modules.titanium.media.MediaModule.requestCameraPermissions
+[WARN]   dalvikvm: VFY: unable to resolve virtual method 73: Landroid/app/Activity;.requestPermissions ([Ljava/lang/String;I)V
+[DEBUG]  dalvikvm: VFY: replacing opcode 0x6e at 0x0037
+[INFO]   dalvikvm: Could not find method android.app.Activity.checkSelfPermission, referenced from method ti.modules.titanium.filesystem.FilesystemModule.hasStoragePermissions
+[WARN]   dalvikvm: VFY: unable to resolve virtual method 27: Landroid/app/Activity;.checkSelfPermission (Ljava/lang/String;)I
+[DEBUG]  dalvikvm: VFY: replacing opcode 0x6e at 0x0012
+[INFO]   dalvikvm: Could not find method android.app.Activity.requestPermissions, referenced from method ti.modules.titanium.filesystem.FilesystemModule.requestStoragePermissions
+[WARN]   dalvikvm: VFY: unable to resolve virtual method 73: Landroid/app/Activity;.requestPermissions ([Ljava/lang/String;I)V
+[DEBUG]  dalvikvm: VFY: replacing opcode 0x6e at 0x0025
+[WARN]   dalvikvm: VFY: unable to find class referenced in signature (Landroid/view/SearchEvent;)
+[INFO]   dalvikvm: Could not find method android.view.Window$Callback.onSearchRequested, referenced from method android.support.v7.internal.view.WindowCallbackWrapper.onSearchRequested
+[WARN]   dalvikvm: VFY: unable to resolve interface method 14837: Landroid/view/Window$Callback;.onSearchRequested (Landroid/view/SearchEvent;)Z
+[DEBUG]  dalvikvm: VFY: replacing opcode 0x72 at 0x0002
+[INFO]   dalvikvm: Could not find method android.view.Window$Callback.onWindowStartingActionMode, referenced from method android.support.v7.internal.view.WindowCallbackWrapper.onWindowStartingActionMode
+[WARN]   dalvikvm: VFY: unable to resolve interface method 14841: Landroid/view/Window$Callback;.onWindowStartingActionMode (Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;
+[DEBUG]  dalvikvm: VFY: replacing opcode 0x72 at 0x0002
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed 101K, 9%% free 3419K/3724K, paused 4ms, total 4ms
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed 1K, 8%% free 3722K/4028K, paused 2ms, total 2ms
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed <1K, 8%% free 4026K/4332K, paused 2ms, total 2ms
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed <1K, 7%% free 4330K/4636K, paused 2ms, total 2ms
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed 8K, 7%% free 4497K/4788K, paused 2ms, total 2ms
+[INFO]   I/dalvikvm-heap: Grow heap (frag case) to 5.964MB for 1536012-byte allocation
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed 1K, 5%% free 5995K/6292K, paused 4ms, total 4ms
+[DEBUG]  dalvikvm: GC_CONCURRENT freed 0K, 5%% free 5995K/6292K, paused 2ms+1ms, total 7ms
+[DEBUG]  dalvikvm: GC_FOR_ALLOC freed <1K, 5%% free 5995K/6292K, paused 2ms, total 2ms
+[INFO]   I/dalvikvm-heap: Grow heap (frag case) to 8.568MB for 2731532-byte allocation
+[INFO]   Project built successfully in 24s 474ms

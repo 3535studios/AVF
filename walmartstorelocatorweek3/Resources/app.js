@@ -18,6 +18,32 @@
 Ti.UI.setBackgroundColor('#000');
 
 if(Ti.Network.online === true) {
+	
+	//added acs application-account login code
+var Cloud = require('ti.cloud');
+
+Cloud.debug = true;
+var loginUser = function(){
+	Cloud.Users.login({
+		login: 'admin',
+		password: '759U54s5Ds^4'
+	}, function(e){
+		
+		if (e.success){
+			var user = e.users[0];
+			Ti.API.info('Success!\n' + 
+				'ACS User ID: ' + user.id + '\n' + 
+				'ACS App sessionId: ' + Cloud.sessionId + '\n' + 
+				'ACS App Username: ' + user.username);
+		} else {
+			alert((e.error && e.message) || JSON.stringify(e));
+		}
+	});
+}; 
+loginUser();
+
+//get geolocation data	
+	
 	var geoModule = require("geo");
 		geoModule.getGeo();
 } else {

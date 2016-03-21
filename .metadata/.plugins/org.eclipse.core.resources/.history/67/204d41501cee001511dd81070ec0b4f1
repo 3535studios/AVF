@@ -1,5 +1,0 @@
-var storeUI = {
-	
-};
-
-exports.storeUI = storeUI;
