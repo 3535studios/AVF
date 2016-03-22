@@ -3166,9 +3166,9 @@
 			"size": 306760
 		},
 		"Classes/ApplicationRouting.m": {
-			"hash": "26a5be811345f7397d8a334748fd5b49",
-			"mtime": "2016-03-21T23:40:46.000Z",
-			"size": 188017
+			"hash": "29597ecee2b70c29bdcf64530a277fe0",
+			"mtime": "2016-03-22T03:42:14.000Z",
+			"size": 188100
 		},
 		"modules/ui/images/badge.png": {
 			"hash": "4c5e51e328d337a135f513bc1e958c82",
@@ -3206,7 +3206,7 @@
 	"publisher": "sequestermckinney",
 	"url": "http://www.3535studios.com",
 	"version": "1.0",
-	"description": "walmartstorelocatorweek3",
+	"description": "undefined",
 	"copyright": "2016 by sequestermckinney",
 	"guid": "179cfa0e-d220-4b5c-9222-48a02d72c920",
 	"useAppThinning": false,

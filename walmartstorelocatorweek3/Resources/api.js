@@ -42,7 +42,7 @@ var walMartApiData = function(lat, lon) {
 				city: json[3].city
 			};
 			
-			console.log(storeInfo);
+			console.log(storeInfo, storeInfo1, storeInfo2, storeInfo3);
 			var ui = require("ui");
 				ui.storeUI(storeInfo, storeInfo1, storeInfo2, storeInfo3);
 			
