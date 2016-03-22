@@ -169,7 +169,7 @@ var storeUI = function(storeInfo, storeInfo1, storeInfo2, storeInfo3) {
 		
 		});
 	
-	
+//begin the ui store views
 	var storeView = Ti.UI.createView({
 		height: 350,
 		width: 350,
@@ -206,7 +206,7 @@ var storeUI = function(storeInfo, storeInfo1, storeInfo2, storeInfo3) {
 		color: "#fff",
 		text: storeInfo.city,
 		left: 20,
-		top: 120
+		top: 140
 	});
 	
 	var zipLabel = Ti.UI.createLabel({
@@ -215,7 +215,7 @@ var storeUI = function(storeInfo, storeInfo1, storeInfo2, storeInfo3) {
 		},
 		color: "#fff",
 		text: storeInfo.zip,
-		top: 120,
+		top: 140,
 		left: 200
 	});
 	
@@ -227,7 +227,7 @@ var storeUI = function(storeInfo, storeInfo1, storeInfo2, storeInfo3) {
 		color: "#fff",
 		text: storeInfo.phone,
 		left: 20,
-		top: 160
+		top: 170
 	});
 	
 	var storeOneView = Ti.UI.createView({
@@ -266,7 +266,7 @@ var storeUI = function(storeInfo, storeInfo1, storeInfo2, storeInfo3) {
 		color: "#fff",
 		text: storeInfo1.city,
 		left: 20,
-		top: 120
+		top: 140
 	});
 	
 	var zipOneLabel = Ti.UI.createLabel({
@@ -275,7 +275,7 @@ var storeUI = function(storeInfo, storeInfo1, storeInfo2, storeInfo3) {
 		},
 		color: "#fff",
 		text: storeInfo1.zip,
-		top: 120,
+		top: 140,
 		left: 200
 	});
 	
@@ -287,7 +287,7 @@ var storeUI = function(storeInfo, storeInfo1, storeInfo2, storeInfo3) {
 		color: "#fff",
 		text: storeInfo1.phone,
 		left: 20,
-		top: 160
+		top: 170
 	}); 
 	
 	var storeTwoView = Ti.UI.createView({
@@ -326,7 +326,7 @@ var storeUI = function(storeInfo, storeInfo1, storeInfo2, storeInfo3) {
 		color: "#fff",
 		text: storeInfo2.city,
 		left: 20,
-		top: 120
+		top: 140
 	});
 	
 	var zipTwoLabel = Ti.UI.createLabel({
@@ -335,7 +335,7 @@ var storeUI = function(storeInfo, storeInfo1, storeInfo2, storeInfo3) {
 		},
 		color: "#fff",
 		text: storeInfo2.zip,
-		top: 120,
+		top: 140,
 		left: 200
 	});
 	
@@ -347,7 +347,7 @@ var storeUI = function(storeInfo, storeInfo1, storeInfo2, storeInfo3) {
 		color: "#fff",
 		text: storeInfo2.phone,
 		left: 20,
-		top: 160
+		top: 170
 	}); 
 	
 	var storeThreeView = Ti.UI.createView({
@@ -386,7 +386,7 @@ var storeUI = function(storeInfo, storeInfo1, storeInfo2, storeInfo3) {
 		color: "#fff",
 		text: storeInfo3.city,
 		left: 20,
-		top: 120
+		top: 140
 	});
 	
 	var zipThreeLabel = Ti.UI.createLabel({
@@ -395,7 +395,7 @@ var storeUI = function(storeInfo, storeInfo1, storeInfo2, storeInfo3) {
 		},
 		color: "#fff",
 		text: storeInfo3.zip,
-		top: 120,
+		top: 140,
 		left: 200
 	});
 	
@@ -407,7 +407,7 @@ var storeUI = function(storeInfo, storeInfo1, storeInfo2, storeInfo3) {
 		color: "#fff",
 		text: storeInfo3.phone,
 		left: 20,
-		top: 160
+		top: 170
 	}); 
 	
 	storeView.add(receiptBtn);

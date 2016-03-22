@@ -19,7 +19,7 @@ Ti.UI.setBackgroundColor('#000');
 
 if(Ti.Network.online === true) {
 	
-	//added acs application-account login code
+//added acs application-account login code
 var Cloud = require('ti.cloud');
 
 Cloud.debug = true;

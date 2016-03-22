@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>com.studios.walmartstorelocatorweek3</id>
+    <name>walmartstorelocatorweek3</name>
+    <version>1.0</version>
+    <publisher>sequestermckinney</publisher>
+    <url>http://www.3535studios.com</url>
+    <description>undefined</description>
+    <copyright>2016 by sequestermckinney</copyright>
+    <icon>appicon.png</icon>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>179cfa0e-d220-4b5c-9222-48a02d72c920</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <ios>
+        <enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
+        <plist>
+            <dict>
+                <key>NSLocationAlwaysUsageDescription</key>
+                <array>
+                    <string>Please allow the app to access your Location to find your closest Wal-Mart store.</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                    <string>UIInterfaceOrientationLandscapeLeft</string>
+                    <string>UIInterfaceOrientationLandscapeRight</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs">ti.cloud</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="ipad">true</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">true</target>
+        <target device="windows">false</target>
+    </deployment-targets>
+    <sdk-version>5.2.0.GA</sdk-version>
+    <property name="appc-app-id" type="string">56edc3e284d750ab208812d8</property>
+    <property name="acs-authbase-url-development" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url-development" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-oauth-secret-development" type="string">6l2Yq19cJdA2UfNveYHzO4UOQ17VA2ZF</property>
+    <property name="acs-oauth-key-development" type="string">AF15DoSrk14V1ZP9KUEcBPAudLbMN5Qy</property>
+    <property name="acs-api-key-development" type="string">udpxXYVA40AHu4Frg0L92u5Q7dPCC5TE</property>
+    <property name="acs-username-development" type="string">appc_app_user_dev</property>
+    <property name="acs-password-development" type="string">u8NJbayH1EmxjFOJpY</property>
+    <property name="acs-authbase-url-production" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url-production" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-oauth-secret-production" type="string">jmG9DIGhiQuKn2tit0N5s1Uy7nmSAM35</property>
+    <property name="acs-oauth-key-production" type="string">svbmFN1a6UNOzBeDpC0eZZV107n9mYeP</property>
+    <property name="acs-api-key-production" type="string">tCZvmBdpUEYSmpTPQwK4MHsdGboTVWgh</property>
+    <property name="acs-username-production" type="string">appc_app_user</property>
+    <property name="acs-password-production" type="string">cBovnobrSdxxSyvkU3</property>
+    <property name="appc-org-id" type="string">100030350</property>
+    <property name="appc-creator-user-id" type="string">42fc4d8f-d8e1-4bd2-b90e-acb418901471</property>
+</ti:app>
