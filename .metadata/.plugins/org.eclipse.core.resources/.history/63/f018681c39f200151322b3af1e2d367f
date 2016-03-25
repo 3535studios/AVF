@@ -1,0 +1,546 @@
+/* var storeUI = function(storeInfo, storeInfo1, storeInfo2, storeInfo3)*/
+
+var storeUI = function(store) {
+	console.log(storeUI);
+	var win = Ti.UI.createWindow({
+		backgroundColor : "#fff",
+		layout : "horizontal"
+	});
+	for ( i = 0,j = store.length; i < j; i++) {
+		var receiptBtn = Ti.UI.createView({
+			height : 50,
+			width : 200,
+			backgroundColor : "#eee",
+			top : 250,
+
+		});
+
+		var cameraLabel = Ti.UI.createLabel({
+			text : "Take Receipt Photo",
+			color : "#000"
+		});
+
+		var storeView = Ti.UI.createView({
+			height : 350,
+			width : 350,
+			top : 40,
+			left : 20,
+			backgroundColor : "#2277cc"
+		});
+
+		var storeLabel = Ti.UI.createLabel({
+			font : {
+				fontSize : 24,
+				fontWeight : "bold"
+			},
+			color : "#fff",
+			text : store.name,
+			left : 20,
+			top : 20
+		});
+
+		var addressLabel = Ti.UI.createLabel({
+			font : {
+				fontSize : 24
+			},
+			color : "#fff",
+			text : store.address,
+			left : 20,
+			top : 80
+		});
+
+		var cityLabel = Ti.UI.createLabel({
+			font : {
+				fontSize : 24
+			},
+			color : "#fff",
+			text : store.city,
+			left : 20,
+			top : 140
+		});
+
+		var zipLabel = Ti.UI.createLabel({
+			font : {
+				fontSize : 24
+			},
+			color : "#fff",
+			text : store.zip,
+			top : 140,
+			left : 200
+		});
+
+		var phoneLabel = Ti.UI.createLabel({
+			font : {
+				fontSize : 18,
+				fontWeight : "bold"
+			},
+			color : "#fff",
+			text : store.phone,
+			left : 20,
+			top : 170
+		});
+
+		receiptBtn.addEventListener('click', function(e) {
+
+			Ti.Media.showCamera({
+				success : function(event) {
+					alert('Your photo was saved to the Photo Gallery');
+				},
+				cancel : function() {
+				},
+				error : function(error) {
+					var message;
+					if (error.code == Ti.Media.NO_CAMERA) {
+						message = 'This device does not have a camera or recording capabilities';
+					} else {
+						message = 'Unexpected error: ' + error.code;
+					}
+
+					Ti.UI.createAlertDialog({
+						title : 'Camera',
+						message : message
+					}).show();
+				},
+				saveToPhotoGallery : true,
+				allowEditing : true,
+				mediaTypes : [Ti.Media.MEDIA_TYPE_VIDEO, Ti.Media.MEDIA_TYPE_PHOTO]
+			});
+
+		});
+	}
+	
+	storeView.add(receiptBtn);
+	receiptBtn.add(cameraLabel);
+	storeView.add(storeLabel);
+	storeView.add(addressLabel);
+	storeView.add(cityLabel);
+	storeView.add(zipLabel);
+	storeView.add(phoneLabel);
+	win.add(storeView);
+
+	win.open();
+};
+
+exports.storeUI = storeUI;
+
+/* var cameraLabel1 = Ti.UI.createLabel({
+ text: "Take Receipt Photo",
+ color: "#000"
+ });
+
+ var receiptBtn1 = Ti.UI.createView({
+ height: 50,
+ width: 200,
+ backgroundColor: "#eee",
+ top: 250,
+
+ });
+
+ var receiptBtn2 = Ti.UI.createView({
+ height: 50,
+ width: 200,
+ backgroundColor: "#eee",
+ top: 250,
+
+ });
+
+ var cameraLabel2 = Ti.UI.createLabel({
+ text: "Take Receipt Photo",
+ color: "#000"
+ });
+
+ var receiptBtn3 = Ti.UI.createView({
+ height: 50,
+ width: 200,
+ backgroundColor: "#eee",
+ top: 250,
+
+ });
+
+ var cameraLabel3 = Ti.UI.createLabel({
+ text: "Take Receipt Photo",
+ color: "#000"
+ });
+
+ receiptBtn.addEventListener('click', function(e){
+
+ Ti.Media.showCamera({
+ success : function(event) {
+ alert('Your photo was saved to the Photo Gallery');
+ },
+ cancel : function() {
+ },
+ error : function(error) {
+ var message;
+ if (error.code == Ti.Media.NO_CAMERA) {
+ message = 'This device does not have a camera or recording capabilities';
+ } else {
+ message = 'Unexpected error: ' + error.code;
+ }
+
+ Ti.UI.createAlertDialog({
+ title : 'Camera',
+ message : message
+ }).show();
+ },
+ saveToPhotoGallery : true,
+ allowEditing : true,
+ mediaTypes : [Ti.Media.MEDIA_TYPE_VIDEO,Ti.Media.MEDIA_TYPE_PHOTO]
+ });
+
+ });
+
+ receiptBtn1.addEventListener('click', function(e){
+
+ Ti.Media.showCamera({
+ success : function(event) {
+ alert('Your photo was saved to the Photo Gallery');
+ },
+ cancel : function() {
+ },
+ error : function(error) {
+ var message;
+ if (error.code == Ti.Media.NO_CAMERA) {
+ message = 'This device does not have a camera or recording capabilities';
+ } else {
+ message = 'Unexpected error: ' + error.code;
+ }
+
+ Ti.UI.createAlertDialog({
+ title : 'Camera',
+ message : message
+ }).show();
+ },
+ saveToPhotoGallery : true,
+ allowEditing : true,
+ mediaTypes : [Ti.Media.MEDIA_TYPE_VIDEO,Ti.Media.MEDIA_TYPE_PHOTO]
+ });
+
+ });
+
+ receiptBtn2.addEventListener('click', function(e){
+
+ Ti.Media.showCamera({
+ success : function(event) {
+ alert('Your photo was saved to the Photo Gallery');
+ },
+ cancel : function() {
+ },
+ error : function(error) {
+ var message;
+ if (error.code == Ti.Media.NO_CAMERA) {
+ message = 'This device does not have a camera or recording capabilities';
+ } else {
+ message = 'Unexpected error: ' + error.code;
+ }
+
+ Ti.UI.createAlertDialog({
+ title : 'Camera',
+ message : message
+ }).show();
+ },
+ saveToPhotoGallery : true,
+ allowEditing : true,
+ mediaTypes : [Ti.Media.MEDIA_TYPE_VIDEO,Ti.Media.MEDIA_TYPE_PHOTO]
+ });
+
+ });
+
+ receiptBtn3.addEventListener('click', function(e){
+
+ Ti.Media.showCamera({
+ success : function(event) {
+ alert('Your photo was saved to the Photo Gallery');
+ },
+ cancel : function() {
+ },
+ error : function(error) {
+ var message;
+ if (error.code == Ti.Media.NO_CAMERA) {
+ message = 'This device does not have a camera or recording capabilities';
+ } else {
+ message = 'Unexpected error: ' + error.code;
+ }
+
+ Ti.UI.createAlertDialog({
+ title : 'Camera',
+ message : message
+ }).show();
+ },
+ saveToPhotoGallery : true,
+ allowEditing : true,
+ mediaTypes : [Ti.Media.MEDIA_TYPE_VIDEO,Ti.Media.MEDIA_TYPE_PHOTO]
+ });
+
+ });
+
+ //begin the ui store views
+ var storeView = Ti.UI.createView({
+ height: 350,
+ width: 350,
+ top: 40,
+ left: 20,
+ backgroundColor: "#2277cc"
+ });
+
+ var storeLabel = Ti.UI.createLabel({
+ font : {
+ fontSize : 24,
+ fontWeight: "bold"
+ },
+ color: "#fff",
+ text: store.name,
+ left: 20,
+ top: 20
+ });
+
+ var addressLabel = Ti.UI.createLabel({
+ font : {
+ fontSize : 24
+ },
+ color: "#fff",
+ text: store.address,
+ left: 20,
+ top: 80
+ });
+
+ var cityLabel = Ti.UI.createLabel({
+ font : {
+ fontSize : 24
+ },
+ color: "#fff",
+ text: store.city,
+ left: 20,
+ top: 140
+ });
+
+ var zipLabel = Ti.UI.createLabel({
+ font : {
+ fontSize : 24
+ },
+ color: "#fff",
+ text: store.zip,
+ top: 140,
+ left: 200
+ });
+
+ var phoneLabel = Ti.UI.createLabel({
+ font : {
+ fontSize : 18,
+ fontWeight: "bold"
+ },
+ color: "#fff",
+ text: store.phone,
+ left: 20,
+ top: 170
+ });
+
+ var storeOneView = Ti.UI.createView({
+ height: 350,
+ width: 350,
+ top: 40,
+ left: 20,
+ backgroundColor: "#1d5fa8"
+ });
+
+ var storeOneLabel = Ti.UI.createLabel({
+ font : {
+ fontSize : 24,
+ fontWeight: "bold"
+ },
+ color: "#fff",
+ text: store.name,
+ left: 20,
+ top: 20
+ });
+
+ var addressOneLabel = Ti.UI.createLabel({
+ font : {
+ fontSize : 24
+ },
+ color: "#fff",
+ text: store.address,
+ left: 20,
+ top: 80
+ });
+
+ var cityOneLabel = Ti.UI.createLabel({
+ font : {
+ fontSize : 24
+ },
+ color: "#fff",
+ text: store.city,
+ left: 20,
+ top: 140
+ });
+
+ var zipOneLabel = Ti.UI.createLabel({
+ font : {
+ fontSize : 24
+ },
+ color: "#fff",
+ text: store.zip,
+ top: 140,
+ left: 200
+ });
+
+ var phoneOneLabel = Ti.UI.createLabel({
+ font : {
+ fontSize : 18,
+ fontWeight: "bold"
+ },
+ color: "#fff",
+ text: store.phone,
+ left: 20,
+ top: 170
+ });
+
+ var storeTwoView = Ti.UI.createView({
+ height: 350,
+ width: 350,
+ top: 20,
+ left: 20,
+ backgroundColor: "#f27b37"
+ });
+
+ var storeTwoLabel = Ti.UI.createLabel({
+ font : {
+ fontSize : 24,
+ fontWeight: "bold"
+ },
+ color: "#fff",
+ text: store.name,
+ left: 20,
+ top: 20
+ });
+
+ var addressTwoLabel = Ti.UI.createLabel({
+ font : {
+ fontSize : 24
+ },
+ color: "#fff",
+ text: store.address,
+ left: 20,
+ top: 80
+ });
+
+ var cityTwoLabel = Ti.UI.createLabel({
+ font : {
+ fontSize : 24
+ },
+ color: "#fff",
+ text: store.city,
+ left: 20,
+ top: 140
+ });
+
+ var zipTwoLabel = Ti.UI.createLabel({
+ font : {
+ fontSize : 24
+ },
+ color: "#fff",
+ text: store.zip,
+ top: 140,
+ left: 200
+ });
+
+ var phoneTwoLabel = Ti.UI.createLabel({
+ font : {
+ fontSize : 18,
+ fontWeight: "bold"
+ },
+ color: "#fff",
+ text: store.phone,
+ left: 20,
+ top: 170
+ });
+
+ var storeThreeView = Ti.UI.createView({
+ height: 350,
+ width: 350,
+ top: 20,
+ left: 20,
+ backgroundColor: "#454545"
+ });
+
+ var storeThreeLabel = Ti.UI.createLabel({
+ font : {
+ fontSize : 24,
+ fontWeight: "bold"
+ },
+ color: "#fff",
+ text: store.name,
+ left: 20,
+ top: 20
+ });
+
+ var addressThreeLabel = Ti.UI.createLabel({
+ font : {
+ fontSize : 24
+ },
+ color: "#fff",
+ text: store.address,
+ left: 20,
+ top: 80
+ });
+
+ var cityThreeLabel = Ti.UI.createLabel({
+ font : {
+ fontSize : 24
+ },
+ color: "#fff",
+ text: store.city,
+ left: 20,
+ top: 140
+ });
+
+ var zipThreeLabel = Ti.UI.createLabel({
+ font : {
+ fontSize : 24
+ },
+ color: "#fff",
+ text: store.zip,
+ top: 140,
+ left: 200
+ });
+
+ var phoneThreeLabel = Ti.UI.createLabel({
+ font : {
+ fontSize : 18,
+ fontWeight: "bold"
+ },
+ color: "#fff",
+ text: store.phone,
+ left: 20,
+ top: 170
+ });
+
+ */
+
+/*storeOneView.add(receiptBtn1);
+ receiptBtn1.add(cameraLabel1);
+ storeOneView.add(storeOneLabel);
+ storeOneView.add(addressOneLabel);
+ storeOneView.add(cityOneLabel);
+ storeOneView.add(zipOneLabel);
+ storeOneView.add(phoneOneLabel);
+ win.add(storeOneView);
+
+ storeTwoView.add(receiptBtn2);
+ receiptBtn2.add(cameraLabel2);
+ storeTwoView.add(storeTwoLabel);
+ storeTwoView.add(addressTwoLabel);
+ storeTwoView.add(cityTwoLabel);
+ storeTwoView.add(zipTwoLabel);
+ storeTwoView.add(phoneTwoLabel);
+ win.add(storeTwoView);
+
+ storeThreeView.add(receiptBtn3);
+ receiptBtn3.add(cameraLabel3);
+ storeThreeView.add(storeThreeLabel);
+ storeThreeView.add(addressThreeLabel);
+ storeThreeView.add(cityThreeLabel);
+ storeThreeView.add(zipThreeLabel);
+ storeThreeView.add(phoneThreeLabel);
+ win.add(storeThreeView); */
+
