@@ -1,0 +1,13 @@
+//collects data from api
+
+var save = function(){
+	
+};
+
+exports.save = save;
+
+var read = function(){
+	
+};
+
+exports.read = read;

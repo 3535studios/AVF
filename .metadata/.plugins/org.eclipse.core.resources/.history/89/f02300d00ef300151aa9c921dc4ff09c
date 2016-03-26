@@ -1,0 +1,127 @@
+
+var storeUI = function(stores) {
+	console.log(stores);
+	var win = Ti.UI.createWindow({
+		backgroundColor : "#fff",
+		layout : "horizontal"
+	});
+	
+	for ( i=0,j=stores.length=4; i<j; i++) {
+		
+		var storeView = Ti.UI.createView({
+			height : 350,
+			width : 350,
+			top : 40,
+			left : 20,
+			backgroundColor : "#2277cc"
+		});
+		
+		var receiptBtnView = Ti.UI.createView({
+			height : 50,
+			width : 200,
+			backgroundColor : "#eee",
+			top : 250
+		});
+
+		var cameraLabel = Ti.UI.createLabel({
+			text : "Take Receipt Photo",
+			color : "#000"
+		});
+
+		var storeLabel = Ti.UI.createLabel({
+			font : {
+				fontSize : 24,
+				fontWeight : "bold"
+			},
+			color : "#fff",
+			text : stores[i].name,
+			left : 20,
+			top : 20
+		});
+
+		var addressLabel = Ti.UI.createLabel({
+			font : {
+				fontSize : 24
+			},
+			color : "#fff",
+			text : stores[i].address,
+			left : 20,
+			top : 80
+		});
+
+		var cityLabel = Ti.UI.createLabel({
+			font : {
+				fontSize : 24
+			},
+			color : "#fff",
+			text : stores[i].city,
+			left : 20,
+			top : 140
+		});
+
+		var zipLabel = Ti.UI.createLabel({
+			font : {
+				fontSize : 24
+			},
+			color : "#fff",
+			text : stores[i].zip,
+			top : 140,
+			left : 200
+		});
+
+		var phoneLabel = Ti.UI.createLabel({
+			font : {
+				fontSize : 18,
+				fontWeight : "bold"
+			},
+			color : "#fff",
+			text : stores[i].phone,
+			left : 20,
+			top : 170
+		});
+
+		receiptBtnView.addEventListener('click', function(e) {
+
+			Ti.Media.showCamera({
+				success : function(event) {
+					alert('Your photo was saved to the Photo Gallery');
+				},
+				cancel : function() {
+				},
+				error : function(error) {
+					var message;
+					if (error.code == Ti.Media.NO_CAMERA) {
+						message = 'This device does not have a camera or recording capabilities';
+					} else {
+						message = 'Unexpected error: ' + error.code;
+					}
+
+					Ti.UI.createAlertDialog({
+						title : 'Camera',
+						message : message
+					}).show();
+				},
+				saveToPhotoGallery : true,
+				allowEditing : true,
+				mediaTypes : [Ti.Media.MEDIA_TYPE_VIDEO, Ti.Media.MEDIA_TYPE_PHOTO]
+			});
+
+		});
+		
+	storeView.add(receiptBtnView);
+	receiptBtnView.add(cameraLabel);
+	storeView.add(storeLabel);
+	storeView.add(addressLabel);
+	storeView.add(cityLabel);
+	storeView.add(zipLabel);
+	storeView.add(phoneLabel);
+	win.add(storeView);
+	
+	}
+	
+	
+	win.open();
+};
+
+exports.storeUI = storeUI;
+

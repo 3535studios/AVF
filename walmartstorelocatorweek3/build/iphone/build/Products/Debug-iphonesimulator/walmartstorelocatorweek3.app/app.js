@@ -47,7 +47,9 @@ loginUser();
 	var geoModule = require("geo");
 		geoModule.getGeo();
 } else {
-	alert("Your network connection appears to be offline.  Please check your network connection.");
+	alert("Your network connection appears to be offline.  Please check your network connection. Reading from local storage.");
+	var dbModule = require("read");
+		dbModule.read();
 }
 
 

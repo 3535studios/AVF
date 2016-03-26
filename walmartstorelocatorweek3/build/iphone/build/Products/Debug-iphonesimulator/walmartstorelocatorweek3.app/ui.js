@@ -1,12 +1,12 @@
 
-var storeUI = function(stores) {
-	console.log(stores);
+var storeUI = function(storeArray) {
+	console.log(storeArray);
 	var win = Ti.UI.createWindow({
 		backgroundColor : "#fff",
 		layout : "horizontal"
 	});
 	
-	for ( i=0,j=stores.length=4; i<j; i++) {
+	for ( i=0,j=storeArray.length=4; i<j; i++) {
 		
 		var storeView = Ti.UI.createView({
 			height : 350,
@@ -34,7 +34,7 @@ var storeUI = function(stores) {
 				fontWeight : "bold"
 			},
 			color : "#fff",
-			text : stores[i].name,
+			text : storeArray[i].name,
 			left : 20,
 			top : 20
 		});
@@ -44,7 +44,7 @@ var storeUI = function(stores) {
 				fontSize : 24
 			},
 			color : "#fff",
-			text : stores[i].address,
+			text : storeArray[i].address,
 			left : 20,
 			top : 80
 		});
@@ -54,7 +54,7 @@ var storeUI = function(stores) {
 				fontSize : 24
 			},
 			color : "#fff",
-			text : stores[i].city,
+			text : storeArray[i].city,
 			left : 20,
 			top : 140
 		});
@@ -64,7 +64,7 @@ var storeUI = function(stores) {
 				fontSize : 24
 			},
 			color : "#fff",
-			text : stores[i].zip,
+			text : storeArray[i].zip,
 			top : 140,
 			left : 200
 		});
@@ -75,7 +75,7 @@ var storeUI = function(stores) {
 				fontWeight : "bold"
 			},
 			color : "#fff",
-			text : stores[i].phone,
+			text : storeArray[i].phone,
 			left : 20,
 			top : 170
 		});

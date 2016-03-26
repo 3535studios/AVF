@@ -10,7 +10,6 @@ var walMartApiData = function(lat, lon) {
 		onload : function(e) {
 			var json = JSON.parse(this.responseText);
 			var stores = [];
-		
 				for (i=0, j=json.length; i<j; i++) {
 					var store = {
 					name: json[i].name,
@@ -19,13 +18,18 @@ var walMartApiData = function(lat, lon) {
 					address: json[i].streetAddress,
 					city: json[i].city
 					};
-				
+					console.log(stores);
 					stores.push(store);
 					
 				}
-				var uiModule = require("ui");
-					uiModule.storeUI(stores);
 				
+			/*	var cleanModule = require("db");
+				cleanModule.cleandb(); */
+				/*var uiModule = require("ui");
+					uiModule.storeUI(stores); */
+				var dbModule = require("db");
+					dbModule.save(stores);
+					console.log(dbModule);
 		},
 
 		onerror : function(e) {
