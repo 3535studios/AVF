@@ -4,7 +4,7 @@ var save = function(stores){
 	console.log(stores);
 	var db = Ti.Database.open('walmartdb');
 	db.execute('CREATE TABLE IF NOT EXISTS storeTbl (id INTEGER PRIMARY KEY, name TEXT, address TEXT, city TEXT, zip INTEGER, phone INTEGER)');
-	db.execute('INSERT INTO storeTbl (name, address, city, zip, phone) VALUES(?,?,?,?,?)', stores.name, stores.address, stores.city, stores.zip, stores.phone);
+	db.execute('INSERT INTO storeTbl (name, address, city, zip, phone) VALUES(?,?,?,?,?)',stores.name, stores.address, stores.city, stores.zip, stores.phone);
 	db.close();
 	read();
 };
