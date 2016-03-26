@@ -6,7 +6,7 @@ var storeUI = function(storeArray) {
 		layout : "horizontal"
 	});
 	
-	for ( i=0,j=storeArray.length; i<j; i++) {
+	for ( i=0,j=storeArray.length=4; i<j; i++) {
 		
 		var storeView = Ti.UI.createView({
 			height : 350,
@@ -14,7 +14,7 @@ var storeUI = function(storeArray) {
 			top : 40,
 			left : 20,
 			backgroundColor : "#2277cc",
-			layout: "vertical""
+			layout: "vertical"
 		});
 		
 		var receiptBtnView = Ti.UI.createView({

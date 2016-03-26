@@ -10,7 +10,6 @@ var walMartApiData = function(lat, lon) {
 		onload : function(e) {
 			var json = JSON.parse(this.responseText);
 			var stores = [];
-				console.log(stores);
 				for (i=0, j=json.length; i<j; i++) {
 					var store = {
 					name: json[i].name,
@@ -19,7 +18,7 @@ var walMartApiData = function(lat, lon) {
 					address: json[i].streetAddress,
 					city: json[i].city
 					};
-					//console.log(stores);
+					console.log(stores);
 					stores.push(store);
 					
 				}

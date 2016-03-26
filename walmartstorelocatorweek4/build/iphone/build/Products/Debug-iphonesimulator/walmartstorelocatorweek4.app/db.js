@@ -1,7 +1,7 @@
 //collects data from api
 
 var save = function(stores){
-	console.log(save);
+	console.log(stores);
 	var db = Ti.Database.open('walmartdb');
 	db.execute('CREATE TABLE IF NOT EXISTS storeTbl (id INTEGER PRIMARY KEY, name TEXT, address TEXT, city TEXT, zip INTEGER, phone INTEGER)');
 	db.execute('INSERT INTO storeTbl (name, address, city, zip, phone) VALUES(?,?,?,?,?)', stores.name, stores.address, stores.city, stores.zip, stores.phone);
@@ -18,7 +18,7 @@ var read = function(){
 	var dbRows = db.execute('SELECT name, address, city, zip, phone FROM storeTbl');
 	if (dbRows.rowCount > 0) {
 		var storeArray = [];
-		console.log(storeArray);
+	
 		while (dbRows.isValidRow()) {
 			var storeInfo = {
 				name : dbRows.fieldByName('name'),
