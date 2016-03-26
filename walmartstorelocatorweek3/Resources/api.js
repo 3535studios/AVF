@@ -21,11 +21,11 @@ var walMartApiData = function(lat, lon) {
 					city: json[i].city
 					};
 					stores.push(store);
-					console.log(store);
+					//console.log(store);
 					
 				}
 				var uiModule = require("ui");
-					uiModule.storeUI(store);
+					uiModule.storeUI(stores);
 				
 				
 			/*var storeInfo = {
