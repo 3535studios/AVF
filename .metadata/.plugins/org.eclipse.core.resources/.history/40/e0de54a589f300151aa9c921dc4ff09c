@@ -17,23 +17,21 @@ var read = function(){
 	db.execute('CREATE TABLE IF NOT EXISTS storeTbl (id INTEGER PRIMARY KEY, name TEXT, address TEXT, city TEXT, zip INTEGER, phone INTEGER)');
 	var dbRows = db.execute('SELECT name, address, city, zip, phone FROM storeTbl');
 	if (dbRows.rowCount > 0) {
-		
 		var storeArray = [];
+	
 		while (dbRows.isValidRow()) {
 			var storeInfo = {
-				name : dbRows.fieldByName('name'),
-				address : dbRows.fieldByName('address'),
-				city : dbRows.fieldByName('city'),
-				zip : dbRows.fieldByName('zip'),
-				phone : dbRows.fieldByName('phone')
+				name : dbRows.fieldByName('stores.name'),
+				address : dbRows.fieldByName('stores.address'),
+				city : dbRows.fieldByName('stores.city'),
+				zip : dbRows.fieldByName('stores.zip'),
+				phone : dbRows.fieldByName('stores.phone')
 			};
-			//console.log(storeInfo);
 			storeArray.push(storeInfo);
 			dbRows.next();
 		}
-		
-		var ui = require("ui");
-			ui.storeUI(storeArray);
+		var uiModule = require("ui");
+			uiModule.storeUI(storeArray);
 	}
 	dbRows.close();
 	db.close();

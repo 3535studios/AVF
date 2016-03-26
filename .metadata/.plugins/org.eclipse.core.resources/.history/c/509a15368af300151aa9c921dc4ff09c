@@ -27,13 +27,11 @@ var read = function(){
 				zip : dbRows.fieldByName('zip'),
 				phone : dbRows.fieldByName('phone')
 			};
-			//console.log(storeInfo);
+			console.log(storeInfo);
 			storeArray.push(storeInfo);
 			dbRows.next();
 		}
 		
-		var ui = require("ui");
-			ui.storeUI(storeArray);
 	}
 	dbRows.close();
 	db.close();

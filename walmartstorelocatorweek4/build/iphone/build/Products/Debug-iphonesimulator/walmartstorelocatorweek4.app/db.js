@@ -1,7 +1,7 @@
 //collects data from api
 
 var save = function(stores){
-	console.log(stores);
+	//console.log(stores);
 	var db = Ti.Database.open('walmartdb');
 	db.execute('CREATE TABLE IF NOT EXISTS storeTbl (id INTEGER PRIMARY KEY, name TEXT, address TEXT, city TEXT, zip INTEGER, phone INTEGER)');
 	db.execute('INSERT INTO storeTbl (name, address, city, zip, phone) VALUES(?,?,?,?,?)',stores.name, stores.address, stores.city, stores.zip, stores.phone);
@@ -12,13 +12,13 @@ var save = function(stores){
 exports.save = save;
 
 var read = function(){
-		console.log(read);
+		//console.log(read);
 	var db = Ti.Database.open('walmartdb');
 	db.execute('CREATE TABLE IF NOT EXISTS storeTbl (id INTEGER PRIMARY KEY, name TEXT, address TEXT, city TEXT, zip INTEGER, phone INTEGER)');
 	var dbRows = db.execute('SELECT name, address, city, zip, phone FROM storeTbl');
 	if (dbRows.rowCount > 0) {
+		
 		var storeArray = [];
-	
 		while (dbRows.isValidRow()) {
 			var storeInfo = {
 				name : dbRows.fieldByName('name'),
@@ -27,11 +27,13 @@ var read = function(){
 				zip : dbRows.fieldByName('zip'),
 				phone : dbRows.fieldByName('phone')
 			};
+			//console.log(storeInfo);
 			storeArray.push(storeInfo);
 			dbRows.next();
 		}
-		var uiModule = require("ui");
-			uiModule.storeUI(storeArray);
+		
+		var ui = require("ui");
+			ui.storeUI(storeArray);
 	}
 	dbRows.close();
 	db.close();

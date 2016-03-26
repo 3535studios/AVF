@@ -15,7 +15,7 @@ var read = function(){
 		//console.log(read);
 	var db = Ti.Database.open('walmartdb');
 	db.execute('CREATE TABLE IF NOT EXISTS storeTbl (id INTEGER PRIMARY KEY, name TEXT, address TEXT, city TEXT, zip INTEGER, phone INTEGER)');
-	var dbRows = db.execute('SELECT name, address, city, zip, phone FROM storeTbl');
+	var dbRows = db.execute('SELECT stores.name, stores.address, stores.city., stores.zip, stores.phone FROM storeTbl');
 	if (dbRows.rowCount > 0) {
 		
 		var storeArray = [];
