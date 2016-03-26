@@ -9,9 +9,8 @@ var walMartApiData = function(lat, lon) {
 
 		onload : function(e) {
 			var json = JSON.parse(this.responseText);
-			console.log(json);
 			var stores = [];
-			
+		
 				for (i=0, j=json.length; i<j; i++) {
 					var store = {
 					name: json[i].name,
@@ -20,8 +19,8 @@ var walMartApiData = function(lat, lon) {
 					address: json[i].streetAddress,
 					city: json[i].city
 					};
+				
 					stores.push(store);
-					//console.log(store);
 					
 				}
 				var uiModule = require("ui");

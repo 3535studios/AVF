@@ -6,7 +6,7 @@ var storeUI = function(stores) {
 		layout : "horizontal"
 	});
 	
-	for ( i=0,j=stores.length; i<j; i++) {
+	for ( i=0,j=stores.length=4; i<j; i++) {
 		
 		var storeView = Ti.UI.createView({
 			height : 350,
