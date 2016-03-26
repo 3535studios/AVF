@@ -3,13 +3,9 @@
 var save = function(stores){
 	//console.log(stores);
 	var db = Ti.Database.open('walmartdb');
-	for(i=0,j=stores.length; i<j; i++) {
-		db.execute('CREATE TABLE IF NOT EXISTS storeTbl (id INTEGER PRIMARY KEY, name TEXT, address TEXT, city TEXT, zip INTEGER, phone INTEGER)');
-		db.execute('INSERT INTO storeTbl (name, address, city, zip, phone) VALUES(?,?,?,?,?)',stores[i].name, stores[i].address, stores[i].city, stores[i].zip, stores[i].phone);
-	}
-
+	db.execute('CREATE TABLE IF NOT EXISTS storeTbl (id INTEGER PRIMARY KEY, name TEXT, address TEXT, city TEXT, zip INTEGER, phone INTEGER)');
+	db.execute('INSERT INTO storeTbl (name, address, city, zip, phone) VALUES(?,?,?,?,?)',stores.name, stores.address, stores.city, stores.zip, stores.phone);
 	db.close();
-	console.log(save);
 	read();
 };
 

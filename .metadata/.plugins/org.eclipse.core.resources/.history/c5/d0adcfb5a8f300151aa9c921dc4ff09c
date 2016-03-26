@@ -13,6 +13,7 @@ var storeUI = function(storeArray) {
 			width : 350,
 			top : 40,
 			left : 20,
+			bottom: 20,
 			backgroundColor : "#2277cc",
 			layout: "vertical"
 		});

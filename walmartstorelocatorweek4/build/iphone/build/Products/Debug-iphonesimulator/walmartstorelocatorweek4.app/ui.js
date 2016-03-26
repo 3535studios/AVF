@@ -17,18 +17,6 @@ var storeUI = function(storeArray) {
 			layout: "vertical"
 		});
 		
-		var receiptBtnView = Ti.UI.createView({
-			height : 50,
-			width : 200,
-			backgroundColor : "#eee",
-			top : 250
-		});
-
-		var cameraLabel = Ti.UI.createLabel({
-			text : "Take Receipt Photo",
-			color : "#000"
-		});
-
 		var storeLabel = Ti.UI.createLabel({
 			font : {
 				fontSize : 30,
@@ -47,7 +35,8 @@ var storeUI = function(storeArray) {
 			color : "#fff",
 			text : storeArray[i].address,
 			left : 20,
-			top : 80
+			right: 20,
+			top : 20
 		});
 
 		var cityLabel = Ti.UI.createLabel({
@@ -57,7 +46,7 @@ var storeUI = function(storeArray) {
 			color : "#fff",
 			text : storeArray[i].city,
 			left : 20,
-			top : 140
+			top : 20
 		});
 
 		var zipLabel = Ti.UI.createLabel({
@@ -66,7 +55,7 @@ var storeUI = function(storeArray) {
 			},
 			color : "#fff",
 			text : storeArray[i].zip,
-			top : 140,
+			top : 0,
 			left : 200
 		});
 
@@ -78,7 +67,19 @@ var storeUI = function(storeArray) {
 			color : "#fff",
 			text : storeArray[i].phone,
 			left : 20,
-			top : 170
+			top: 20
+		});
+		
+		var receiptBtnView = Ti.UI.createView({
+			height : 50,
+			width : 200,
+			backgroundColor : "#eee",
+			top : 20
+		});
+		
+		var cameraLabel = Ti.UI.createLabel({
+			text : "Take Receipt Photo",
+			color : "#000"
 		});
 
 		receiptBtnView.addEventListener('click', function(e) {
@@ -109,13 +110,14 @@ var storeUI = function(storeArray) {
 
 		});
 		
-	storeView.add(receiptBtnView);
-	receiptBtnView.add(cameraLabel);
+	
 	storeView.add(storeLabel);
 	storeView.add(addressLabel);
 	storeView.add(cityLabel);
-	storeView.add(zipLabel);
+	cityLabel.add(zipLabel);
 	storeView.add(phoneLabel);
+	storeView.add(receiptBtnView);
+	receiptBtnView.add(cameraLabel);
 	win.add(storeView);
 	
 	}

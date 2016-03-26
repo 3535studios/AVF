@@ -17,13 +17,25 @@ var storeUI = function(storeArray) {
 			layout: "vertical"
 		});
 		
+		var receiptBtnView = Ti.UI.createView({
+			height : 50,
+			width : 200,
+			backgroundColor : "#eee",
+			top : 250
+		});
+
+		var cameraLabel = Ti.UI.createLabel({
+			text : "Take Receipt Photo",
+			color : "#000"
+		});
+
 		var storeLabel = Ti.UI.createLabel({
 			font : {
 				fontSize : 30,
 				fontWeight : "bold"
 			},
 			color : "#fff",
-			text : storeArray[i].name,
+			text : storeArray[0].name,
 			left : 20,
 			top : 20
 		});
@@ -33,10 +45,9 @@ var storeUI = function(storeArray) {
 				fontSize : 24
 			},
 			color : "#fff",
-			text : storeArray[i].address,
+			text : storeArray[0].address,
 			left : 20,
-			right: 20,
-			top : 20
+			top : 80
 		});
 
 		var cityLabel = Ti.UI.createLabel({
@@ -44,9 +55,9 @@ var storeUI = function(storeArray) {
 				fontSize : 24
 			},
 			color : "#fff",
-			text : storeArray[i].city,
+			text : storeArray[0].city,
 			left : 20,
-			top : 20
+			top : 140
 		});
 
 		var zipLabel = Ti.UI.createLabel({
@@ -54,8 +65,8 @@ var storeUI = function(storeArray) {
 				fontSize : 24
 			},
 			color : "#fff",
-			text : storeArray[i].zip,
-			top : 0,
+			text : storeArray[0].zip,
+			top : 140,
 			left : 200
 		});
 
@@ -65,21 +76,9 @@ var storeUI = function(storeArray) {
 				fontWeight : "bold"
 			},
 			color : "#fff",
-			text : storeArray[i].phone,
+			text : storeArray[0].phone,
 			left : 20,
-			top: 20
-		});
-		
-		var receiptBtnView = Ti.UI.createView({
-			height : 50,
-			width : 200,
-			backgroundColor : "#eee",
-			top : 20
-		});
-		
-		var cameraLabel = Ti.UI.createLabel({
-			text : "Take Receipt Photo",
-			color : "#000"
+			top : 170
 		});
 
 		receiptBtnView.addEventListener('click', function(e) {
@@ -110,14 +109,13 @@ var storeUI = function(storeArray) {
 
 		});
 		
-	
+	storeView.add(receiptBtnView);
+	receiptBtnView.add(cameraLabel);
 	storeView.add(storeLabel);
 	storeView.add(addressLabel);
 	storeView.add(cityLabel);
-	cityLabel.add(zipLabel);
+	storeView.add(zipLabel);
 	storeView.add(phoneLabel);
-	storeView.add(receiptBtnView);
-	receiptBtnView.add(cameraLabel);
 	win.add(storeView);
 	
 	}

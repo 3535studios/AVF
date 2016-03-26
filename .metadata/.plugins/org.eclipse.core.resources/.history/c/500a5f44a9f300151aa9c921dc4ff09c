@@ -116,9 +116,9 @@ var storeUI = function(storeArray) {
 	storeView.add(cityLabel);
 	cityLabel.add(zipLabel);
 	storeView.add(phoneLabel);
-	storeView.add(receiptBtnView);
+	//storeView.add(receiptBtnView);
 	receiptBtnView.add(cameraLabel);
-	win.add(storeView);
+	win.add(storeView,receiptBtnView);
 	
 	}
 	

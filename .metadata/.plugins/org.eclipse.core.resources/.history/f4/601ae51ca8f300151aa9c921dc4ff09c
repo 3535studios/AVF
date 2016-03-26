@@ -6,7 +6,7 @@ var storeUI = function(storeArray) {
 		layout : "horizontal"
 	});
 	
-	for ( i=0,j=storeArray.length=4; i<j; i++) {
+	for ( i=0,j=storeArray.length; i<j; i++) {
 		
 		var storeView = Ti.UI.createView({
 			height : 350,
@@ -66,8 +66,7 @@ var storeUI = function(storeArray) {
 			},
 			color : "#fff",
 			text : storeArray[i].phone,
-			left : 20,
-			top: 20
+			left : 20
 		});
 		
 		var receiptBtnView = Ti.UI.createView({
@@ -114,7 +113,7 @@ var storeUI = function(storeArray) {
 	storeView.add(storeLabel);
 	storeView.add(addressLabel);
 	storeView.add(cityLabel);
-	cityLabel.add(zipLabel);
+	storeView.add(zipLabel);
 	storeView.add(phoneLabel);
 	storeView.add(receiptBtnView);
 	receiptBtnView.add(cameraLabel);

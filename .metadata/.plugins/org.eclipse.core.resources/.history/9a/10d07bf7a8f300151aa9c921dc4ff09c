@@ -74,7 +74,7 @@ var storeUI = function(storeArray) {
 			height : 50,
 			width : 200,
 			backgroundColor : "#eee",
-			top : 20
+			top : 40
 		});
 		
 		var cameraLabel = Ti.UI.createLabel({
