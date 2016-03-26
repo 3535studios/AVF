@@ -1,4 +1,3 @@
-/* var storeUI = function(storeInfo, storeInfo1, storeInfo2, storeInfo3)*/
 
 var storeUI = function(stores) {
 	console.log(stores);
