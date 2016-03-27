@@ -3166,9 +3166,9 @@
 			"size": 306760
 		},
 		"Classes/ApplicationRouting.m": {
-			"hash": "fb26d965d8eea14f381c9abf3a02d19d",
-			"mtime": "2016-02-20T16:09:30.000Z",
-			"size": 493
+			"hash": "ba3c96f156af0f97e3a9e89553198cda",
+			"mtime": "2016-03-27T00:14:37.000Z",
+			"size": 174892
 		},
 		"modules/ui/images/badge.png": {
 			"hash": "4c5e51e328d337a135f513bc1e958c82",
@@ -3186,16 +3186,18 @@
 			"size": 3126
 		}
 	},
-	"target": "simulator",
-	"deployType": "development",
+	"target": "device",
+	"deployType": "test",
 	"sdkVersion": "5.2.0.GA",
 	"iosSdkVersion": "9.3",
 	"deviceFamily": "universal",
 	"iosSdkPath": "/Users/sequestermckinney/Library/Application Support/Titanium/mobilesdk/osx/5.2.0.GA/iphone",
 	"tiCoreHash": "5710cda7b179a3c8391cc94011e308de",
+	"developerName": "Sequester McKinney (28G3T772NK)",
 	"modulesHash": "7fb655db1d51a26b74a2778ab4a02a6b",
 	"modulesNativeHash": "d41d8cd98f00b204e9800998ecf8427e",
 	"gitHash": "384775e",
+	"ppUuid": "414742c8-aba2-4b6c-9843-9c93c52fcc5f",
 	"forceCopy": false,
 	"forceCopyAll": false,
 	"name": "walmartstorelocatorweek4",
@@ -3208,8 +3210,8 @@
 	"copyright": "2016 by sequestermckinney",
 	"guid": "7615c1b9-5c37-47c4-9777-b1272c97161e",
 	"useAppThinning": false,
-	"skipJSMinification": true,
-	"encryptJS": false,
+	"skipJSMinification": false,
+	"encryptJS": true,
 	"useJSCore": false,
 	"runOnMainThread": false,
 	"useAutoLayout": false
