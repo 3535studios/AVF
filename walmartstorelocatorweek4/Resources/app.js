@@ -46,7 +46,7 @@ loginUser();
 
 } else {
 	alert("Your network connection appears to be offline.  Please check your network connection. Reading from local storage.");
-	var dbModule = require("read");
+	var dbModule = require("db");
 		dbModule.read();
 }
 

@@ -1,5 +1,5 @@
 =run
-LAST_LAUNCH_TIMESTAMP=1458944469501
+LAST_LAUNCH_TIMESTAMP=1459079466185
 eclipse.preferences.version=1
 preference.show.console.onError=false
 preference.studio.perspective.version=103
@@ -8,7 +8,7 @@ walmartappweek3\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.devi
 walmartstorelocatorweek3\:launchMode=run
 walmartstorelocatorweek3\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.B9A2FABA-EC2E-4162-BCFF-F4E528347DD5
 walmartstorelocatorweek4\:launchMode=run
-walmartstorelocatorweek4\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.simulator.launchShortcut.Google Nexus 10 - 4.2.2 - API 17 - 2560x1600
+walmartstorelocatorweek4\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.B9A2FABA-EC2E-4162-BCFF-F4E528347DD5
 weatherappweek1\:launchMode=run
 weatherappweek1\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.B9A2FABA-EC2E-4162-BCFF-F4E528347DD5
 weatherappweek2\:launchMode=run
