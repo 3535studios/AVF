@@ -57,4 +57,6 @@ if (Ti.Geolocation.locationServicesEnabled) {
 		geoModule.getGeo();
 } else {
     alert('Please enable location services');
+    var dbModule = require("db");
+		dbModule.read();
 }

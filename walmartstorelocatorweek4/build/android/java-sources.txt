@@ -1,8 +1,0 @@
-"/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek4/build/android/gen/android/support/v7/appcompat/R.java"
-"/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek4/build/android/gen/android/support/v7/cardview/R.java"
-"/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek4/build/android/gen/com/studios/walmartstorelocatorweek4/AssetCryptImpl.java"
-"/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek4/build/android/gen/com/studios/walmartstorelocatorweek4/R.java"
-"/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek4/build/android/gen/com/studios/walmartstorelocatorweek4/Walmartstorelocatorweek4Activity.java"
-"/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek4/build/android/gen/com/studios/walmartstorelocatorweek4/Walmartstorelocatorweek4AppInfo.java"
-"/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek4/build/android/gen/com/studios/walmartstorelocatorweek4/Walmartstorelocatorweek4Application.java"
-"/Users/sequestermckinney/Desktop/Class-Repos/AVF/walmartstorelocatorweek4/build/android/gen/ti/modules/titanium/ui/R.java"

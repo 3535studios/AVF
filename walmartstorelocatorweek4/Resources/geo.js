@@ -1,4 +1,3 @@
-
 var getGeo = function() {
 	if (Ti.Platform.osname === "android") {
 		var lat = 34.04839324951172;
@@ -18,6 +17,17 @@ var getGeo = function() {
 				apiModule.walMartApiData(lat, lon);
 		});
 	} 
+	
+	//checks to see if Location Services are enabled
+if (Ti.Geolocation.locationServicesEnabled) {
+    // perform other operations with Ti.Geolocation
+    var geoModule = require("geo");
+		geoModule.getGeo();
+} else {
+    alert('Please enable location services');
+    var dbModule = require("db");
+		dbModule.read();
+}
 };
 
 exports.getGeo = getGeo;
