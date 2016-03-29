@@ -1,0 +1,28 @@
+if(Ti.Network.online === true) {
+var getGeo = function() {
+	if (Ti.Platform.osname === "android") {
+		var lat = 34.04839324951172;
+		var lon = -84.08440399169922;
+		//imports the api module into the geo module, pass lat, lng to api module
+		var apiModule = require("api");
+			apiModule.walMartApiData(lat, lon);
+	} else {
+		
+		Ti.Geolocation.getCurrentPosition(function(e) {
+			console.log(e);
+			var lat = e.coords.latitude;
+			var lon = e.coords.longitude;
+
+			//imports the api module into the geo module, pass lat, lng to api module
+			var apiModule = require("api");
+				apiModule.walMartApiData(lat, lon);
+		});
+	} 
+	
+};
+} else {
+	var db = require("db");
+		db.read();
+}
+
+exports.getGeo = getGeo;

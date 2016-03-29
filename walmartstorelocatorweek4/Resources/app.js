@@ -42,7 +42,8 @@ var loginUser = function(){
 }; 
 loginUser();
 
-	
+var clean = require("db");
+	clean.cleandb();
 
 } else {
 	alert("Your network connection appears to be offline.  Please check your network connection. Reading from local storage.");
